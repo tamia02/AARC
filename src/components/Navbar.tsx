@@ -104,7 +104,7 @@ export default function Navbar() {
       />
       {/* Menu panel — full screen on mobile */}
       <div
-        className={`md:hidden fixed inset-0 z-50 bg-[#1e1e1e] flex flex-col transition-transform duration-400 ${
+        className={`md:hidden fixed inset-0 z-50 bg-[#111111] flex flex-col transition-transform duration-400 ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
