@@ -76,9 +76,20 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center space-y-3">
         <p className="font-sans text-xs opacity-60">
           © {new Date().getFullYear()} AARC Smart Bookkeeping. All rights reserved.
+        </p>
+        <p className="font-sans text-xs opacity-40">
+          Made with ♥ by{" "}
+          <a
+            href="https://vaslinq.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:opacity-80 transition-opacity"
+          >
+            Tasmiya @ vaslinq.com
+          </a>
         </p>
       </div>
     </footer>
