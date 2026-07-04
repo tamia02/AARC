@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 interface CalendlyButtonProps {
   className?: string;
@@ -15,6 +15,21 @@ export default function CalendlyButton({
   text = "Book a Free Consultation",
   onClick,
 }: CalendlyButtonProps) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const preloadCalendly = () => {
+    if (typeof window !== "undefined" && !(window as any).Calendly) {
+      const scriptId = "calendly-external-script";
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement("script");
+        script.id = scriptId;
+        script.src = "https://assets.calendly.com/assets/external/widget.js";
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    }
+  };
+
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     if (onClick) onClick();
@@ -24,7 +39,23 @@ export default function CalendlyButton({
           url: "https://calendly.com/aarcsmartbookkeeping/30min",
         });
       } else {
-        window.open("https://calendly.com/aarcsmartbookkeeping/30min", "_blank");
+        setIsLoading(true);
+        preloadCalendly();
+
+        const startTime = Date.now();
+        const interval = setInterval(() => {
+          if ((window as any).Calendly) {
+            clearInterval(interval);
+            setIsLoading(false);
+            (window as any).Calendly.initPopupWidget({
+              url: "https://calendly.com/aarcsmartbookkeeping/30min",
+            });
+          } else if (Date.now() - startTime > 3000) {
+            clearInterval(interval);
+            setIsLoading(false);
+            window.open("https://calendly.com/aarcsmartbookkeeping/30min", "_blank");
+          }
+        }, 100);
       }
     }
   };
@@ -41,9 +72,12 @@ export default function CalendlyButton({
   return (
     <button
       onClick={handleClick}
-      className={`${baseStyles} ${variants[variant]} ${className}`}
+      onMouseEnter={preloadCalendly}
+      onFocus={preloadCalendly}
+      disabled={isLoading}
+      className={`${baseStyles} ${variants[variant]} ${className} ${isLoading ? "opacity-75 cursor-wait" : ""}`}
     >
-      {text}
+      {isLoading ? "Loading..." : text}
     </button>
   );
 }

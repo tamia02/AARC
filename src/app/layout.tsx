@@ -53,6 +53,9 @@ export default function RootLayout({
       className={`${playfair.variable} ${montserrat.variable} h-full scroll-smooth antialiased`}
     >
       <head>
+        {/* Preconnect to Calendly */}
+        <link rel="preconnect" href="https://assets.calendly.com" />
+        <link rel="preconnect" href="https://calendly.com" />
         {/* Calendly CSS link */}
         <link
           href="https://assets.calendly.com/assets/external/widget.css"
@@ -88,7 +91,7 @@ export default function RootLayout({
         {/* Calendly widget external script */}
         <Script
           src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
       </body>
     </html>
