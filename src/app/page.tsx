@@ -24,15 +24,15 @@ export default function Home() {
               </p>
             </ScrollReveal>
             <ScrollReveal direction="up" delay={0.3}>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
                 <CalendlyButton
                   variant="primary"
                   text="Book a Free Consultation"
-                  className="px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
+                  className="w-full sm:w-auto px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
                 />
                 <Link
                   href="/services"
-                  className="border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
+                  className="w-full sm:w-auto border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
                 >
                   View Our Services
                 </Link>
@@ -43,15 +43,15 @@ export default function Home() {
 
         {/* Trust Strip */}
         <div className="absolute bottom-0 w-full bg-surface-container-low py-6 border-t border-outline-variant/30">
-          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-wrap justify-between items-center gap-6 text-on-surface-variant opacity-80">
-            <span className="font-sans text-[12px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary">verified</span> MBA & MSA CREDENTIALED
+          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col sm:flex-row flex-wrap justify-center md:justify-between items-center gap-4 md:gap-6 text-on-surface-variant opacity-80">
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">verified</span> MBA &amp; MSA CREDENTIALED
             </span>
-            <span className="font-sans text-[12px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary">domain</span> HOSPITAL, PUBLIC & SOLAR EXPERIENCE
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">domain</span> HOSPITAL, PUBLIC &amp; SOLAR EXPERIENCE
             </span>
-            <span className="font-sans text-[12px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary">location_on</span> PROUDLY SERVING CYPRESS & TOMBALL, TX
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">location_on</span> PROUDLY SERVING CYPRESS &amp; TOMBALL, TX
             </span>
           </div>
         </div>

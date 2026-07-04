@@ -42,14 +42,14 @@ export default function Navbar() {
     >
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3 select-none cursor-pointer">
+        <Link href="/" className="flex items-center gap-2 select-none cursor-pointer min-w-0 flex-1 mr-2">
           <img
             alt="AARC Logo"
-            className="h-10 w-auto object-contain flex-shrink-0"
+            className="h-9 w-auto object-contain flex-shrink-0"
             src="/logo-transparent.png"
           />
-          <span className="font-serif leading-tight text-primary font-bold text-[14px] md:text-[16px]">
-            AARC Smart<br className="hidden sm:block" /> <span className="sm:inline">Bookkeeping</span>
+          <span className="font-serif leading-tight text-primary font-bold text-[13px] md:text-[15px] whitespace-nowrap">
+            AARC Smart Bookkeeping
           </span>
         </Link>
 
