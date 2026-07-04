@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AARC Smart Bookkeeping
+This is the premium visual redesign for AARC Smart Bookkeeping, featuring custom typography, responsive design tokens, and live booking integration.
 
 ## Getting Started
 
