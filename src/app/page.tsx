@@ -9,53 +9,57 @@ export default function Home() {
   return (
     <div className="relative overflow-hidden bg-background text-on-surface">
       {/* Hero Section */}
-      <header className="relative min-h-screen flex items-center pt-32 pb-20 overflow-hidden bg-surface-bright" id="home">
+      <header className="relative flex flex-col pt-24 overflow-hidden bg-surface-bright" id="home">
         <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none" />
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 w-full">
-          <div className="lg:col-span-8">
-            <ScrollReveal direction="up" delay={0.1}>
-              <h1 className="font-serif text-[40px] md:text-[56px] text-on-background mb-6 leading-tight font-bold">
-                Bookkeeping That Gives You <span className="italic text-primary">Clarity</span>, Not Confusion.
-              </h1>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.2}>
-              <p className="font-sans text-[18px] text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
-                Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, and across Northwest Houston.
-              </p>
-            </ScrollReveal>
-            <ScrollReveal direction="up" delay={0.3}>
-              <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                <CalendlyButton
-                  variant="primary"
-                  text="Book a Free Consultation"
-                  className="w-full sm:w-auto px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
-                />
-                <Link
-                  href="/services"
-                  className="w-full sm:w-auto border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
-                >
-                  View Our Services
-                </Link>
-              </div>
-            </ScrollReveal>
+        {/* Hero Content */}
+        <div className="flex-1 flex items-center py-16 md:py-24">
+          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 w-full">
+            <div className="lg:col-span-8">
+              <ScrollReveal direction="up" delay={0.1}>
+                <h1 className="font-serif text-[40px] md:text-[56px] text-on-background mb-6 leading-tight font-bold">
+                  Bookkeeping That Gives You <span className="italic text-primary">Clarity</span>, Not Confusion.
+                </h1>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.2}>
+                <p className="font-sans text-[18px] text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
+                  Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, and across Northwest Houston.
+                </p>
+              </ScrollReveal>
+              <ScrollReveal direction="up" delay={0.3}>
+                <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+                  <CalendlyButton
+                    variant="primary"
+                    text="Book a Free Consultation"
+                    className="w-full sm:w-auto px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
+                  />
+                  <Link
+                    href="/services"
+                    className="w-full sm:w-auto border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
+                  >
+                    View Our Services
+                  </Link>
+                </div>
+              </ScrollReveal>
+            </div>
           </div>
         </div>
 
-        {/* Trust Strip */}
-        <div className="absolute bottom-0 w-full bg-surface-container-low py-6 border-t border-outline-variant/30">
-          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col sm:flex-row flex-wrap justify-center md:justify-between items-center gap-4 md:gap-6 text-on-surface-variant opacity-80">
-            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+        {/* Trust Strip — flows naturally BELOW hero content, never overlaps */}
+        <div className="w-full bg-surface-container-low py-5 border-t border-outline-variant/30 relative z-10">
+          <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col sm:flex-row flex-wrap justify-center md:justify-between items-center gap-3 md:gap-6 text-on-surface-variant opacity-80">
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">verified</span> MBA &amp; MSA CREDENTIALED
             </span>
-            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">domain</span> HOSPITAL, PUBLIC &amp; SOLAR EXPERIENCE
             </span>
-            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2 text-center">
+            <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">location_on</span> PROUDLY SERVING CYPRESS &amp; TOMBALL, TX
             </span>
           </div>
         </div>
       </header>
+
 
       {/* Pain Points Section */}
       <section className="py-section-gap bg-surface">
