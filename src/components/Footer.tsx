@@ -1,0 +1,86 @@
+import Link from "next/link";
+
+export default function Footer() {
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Testimonials", path: "/testimonials" },
+    { name: "Contact", path: "/contact" },
+  ];
+
+  return (
+    <footer className="bg-[#303030] py-16 text-[#e4e2e2] mt-auto">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Logo and Description */}
+        <div className="md:col-span-1">
+          <Link href="/" className="inline-block select-none cursor-pointer">
+            <img
+              alt="AARC Logo"
+              className="h-16 w-auto mb-6"
+              src="/logo-transparent.png"
+            />
+          </Link>
+          <p className="font-sans text-sm text-[#e4e2e2]/80 leading-relaxed">
+            Providing meticulous financial oversight for Northwest Houston's most ambitious entrepreneurs.
+          </p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h4 className="font-sans text-[#ffdea4] mb-6 uppercase tracking-widest text-[12px] font-bold">
+            Quick Links
+          </h4>
+          <ul className="space-y-4 font-sans text-sm">
+            {quickLinks.map((link) => (
+              <li key={link.name}>
+                <Link
+                  href={link.path}
+                  className="hover:text-[#cfa550] transition-colors cursor-pointer"
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Service Areas */}
+        <div>
+          <h4 className="font-sans text-[#ffdea4] mb-6 uppercase tracking-widest text-[12px] font-bold">
+            Service Areas
+          </h4>
+          <ul className="space-y-4 font-sans text-sm">
+            <li>Cypress, TX</li>
+            <li>Tomball, TX</li>
+            <li>The Woodlands, TX</li>
+            <li>Northwest Houston</li>
+          </ul>
+        </div>
+
+        {/* Contact info & Socials */}
+        <div>
+          <h4 className="font-sans text-[#ffdea4] mb-6 uppercase tracking-widest text-[12px] font-bold">
+            Contact
+          </h4>
+          <p className="text-sm mb-4 font-sans">Inquiry@AARCSmartBooks.com</p>
+          <div className="flex gap-4">
+            <span className="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[24px] select-none">
+              hub
+            </span>
+            <span className="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[24px] select-none">
+              linked_services
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center">
+        <p className="font-sans text-xs opacity-60">
+          © {new Date().getFullYear()} AARC Smart Bookkeeping. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+}

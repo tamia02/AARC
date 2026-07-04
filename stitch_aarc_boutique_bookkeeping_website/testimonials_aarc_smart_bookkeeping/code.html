@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Testimonials | AARC Smart Bookkeeping</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .luxury-card-shadow {
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.04);
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 20px 60px rgba(0,0,0,0.06);
+        }
+        .nav-scrolled {
+            background-color: #1b1c1c !important; /* Deep Black from config */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .nav-scrolled .nav-link {
+            color: #ffffff !important;
+        }
+        .nav-scrolled .brand-logo {
+            color: #ffdea4 !important; /* Primary Fixed */
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-highest": "#e4e2e2",
+                      "surface-variant": "#e4e2e2",
+                      "tertiary-container": "#adabaa",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "primary-container": "#cfa550",
+                      "on-background": "#1b1c1c",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#dbdad9",
+                      "secondary-container": "#a6f0e9",
+                      "on-primary-fixed-variant": "#5d4200",
+                      "on-secondary-fixed": "#00201e",
+                      "tertiary-fixed-dim": "#c9c6c5",
+                      "on-secondary-fixed-variant": "#00504c",
+                      "surface-tint": "#7a5904",
+                      "surface-bright": "#fbf9f8",
+                      "on-tertiary-fixed-variant": "#474646",
+                      "on-secondary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-error": "#ffffff",
+                      "primary": "#7a5904",
+                      "on-error-container": "#93000a",
+                      "inverse-on-surface": "#f2f0f0",
+                      "inverse-primary": "#edc068",
+                      "surface-container-high": "#eae8e7",
+                      "background": "#fbf9f8",
+                      "surface-container": "#efeded",
+                      "secondary-fixed": "#a6f0e9",
+                      "secondary-fixed-dim": "#8bd3cd",
+                      "primary-fixed-dim": "#edc068",
+                      "on-primary": "#ffffff",
+                      "on-primary-container": "#543b00",
+                      "secondary": "#186964",
+                      "surface": "#fbf9f8",
+                      "tertiary-fixed": "#e5e2e1",
+                      "outline-variant": "#d2c5b2",
+                      "on-tertiary-container": "#403f3f",
+                      "surface-container-low": "#f5f3f3",
+                      "primary-fixed": "#ffdea4",
+                      "on-primary-fixed": "#261900",
+                      "outline": "#807666",
+                      "on-tertiary": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-secondary-container": "#216f6a",
+                      "on-surface": "#1b1c1c",
+                      "on-surface-variant": "#4e4637",
+                      "tertiary": "#5f5e5e",
+                      "inverse-surface": "#303030"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "margin-mobile": "20px",
+                      "container-max": "1280px",
+                      "margin-desktop": "64px",
+                      "gutter": "32px",
+                      "section-gap": "120px"
+              },
+              "fontFamily": {
+                      "headline-md": ["Playfair Display"],
+                      "display-lg": ["Playfair Display"],
+                      "label-caps": ["Montserrat"],
+                      "body-lg": ["Montserrat"],
+                      "headline-sm": ["Playfair Display"],
+                      "body-md": ["Montserrat"],
+                      "display-lg-mobile": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "headline-md": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-transparent transition-colors duration-500 backdrop-blur-md" id="navbar">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-unit">
+<div class="flex items-center gap-2">
+<span class="brand-logo font-display-lg text-headline-sm tracking-tighter text-primary">AARC</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Pricing</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-300" href="#">Testimonials</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps font-bold hover:scale-[1.03] transition-transform duration-300 rounded">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Content Header -->
+<header class="pt-section-gap pb-16 bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="reveal-up active">
+<p class="font-label-caps text-label-caps text-primary mb-4">OUR TRACK RECORD</p>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-6">What Clients Are Saying</h1>
+<div class="w-24 h-1 bg-primary mx-auto mb-8"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    We take pride in delivering meticulous financial precision to boutique firms, growing startups, and established enterprises across the globe.
+                </p>
+</div>
+</div>
+</header>
+<!-- Testimonials Bento-inspired Grid -->
+<main class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 border-l-4 border-primary-container flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1">
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-primary-container" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"AARC has completely transformed how we handle our monthly closing. Their meticulous attention to detail is something I've rarely seen in traditional bookkeeping firms."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a woman in her late 40s, wearing an elegant cream blazer, set against a blurred high-end corporate office background with golden sunset lighting filtering through glass windows. The style is sophisticated and editorial, with a shallow depth of field emphasizing a confident, trustworthy smile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC5wXxgUol9JKhG-fskspWxMhZAkCDp4zUpliJCfdCMNGmIcTWQfSuIrs_4RO1jJsnue2qh-TNzUHBaJyioDKc0_nTVO15IvAhofajt2jUDDj4fSTY35_9VqMOlCfq2U3CMLYStVGklD_VWhK4sFSsWyZv_7qRREnv84Xm9evG5LaWzn2M_XxMbKQvlJzN-MD7C1R4MNgsxUFwd8lx9REMhhcjEDCMEgpcajLWxZqFQvVd9lk03tqQCHkpr2w8vjt6DJE-h9m-O6hd"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Elena Richardson</h4>
+<p class="text-xs text-on-surface-variant">CEO, Richardson &amp; Co. Real Estate</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"The transition to AARC was seamless. Their team integrated with our existing software and immediately identified cost-saving opportunities we had missed for years."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a man in a navy tailored suit, looking directly at the camera with a friendly and capable expression. The background is a minimalist, white-walled architectural space with soft, diffused daylight. The aesthetic is clean, professional, and reflects a high-end financial services environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE6uU3iQtsOR5VSln5tCZ56vzitVLPSu9F8Aj7BzEKgfIgi-K5p_1r4mlO4MtzhRnE0d4dWDQa4tZiQQq9YwCvvYOh7Ncd0Jm3f4wGpkAhm0aAxYfWL-nAfa_ofn-UuNAHCss8rpEkqr1bypU7Tptw6ltVbRn-s_WzuHL6xGsrK8jXf_2Xv8Xa2f9PzwplCpo9GtluSuqOyX6dwDtIRt0FFQ-FEd3nb5iLrVXMbhTYByCGI2XfzXcui9SEhyhQbnIL2TAhEgxZgypZ"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Marcus Thorne</h4>
+<p class="text-xs text-on-surface-variant">Director, Thorne Digital Systems</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 border-l-4 border-primary-container flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"Finally, a bookkeeping service that understands the unique pressures of the luxury hospitality sector. Precision is non-negotiable for us, and AARC delivers every single month."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of a woman with a sophisticated aesthetic, wearing modern spectacles and a silk charcoal shirt. The lighting is warm and cinematic, suggesting an evening in a high-end boutique hotel lobby. The image exudes professional wisdom and meticulous standards, framed with elegant, balanced composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5WRYAth8Cx0lkqe7Xu89tYKmbxZlRBCP_yqju4e7amro7UMotvvA9jJ3HV0-otTVTg6reGa0SxlpBnUBOflSRAducJDy1O791shY51UKVB9FN2i0v5AiZ71odbsncfIXzjh5sC4jnx1IWebvohbZdzIL3chPUAltl5cXcsL0TW8kO7Kb6IK_eRm7m4Ihjkma9nXuPSqJ9Sz9c2AmCjbUyiLB_cu2KqMobYA98EZTO8Xy2XBdD2Lvt8cJgqyahVAtTo9MTdriOuGuH"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Sophia Vance</h4>
+<p class="text-xs text-on-surface-variant">Founder, L'Auberge Collective</p>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"Their dashboard reporting provides clarity I didn't think was possible. I can see my exact cash position and future liabilities with a single click. Truly smart bookkeeping."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a young entrepreneur with a focused expression, wearing a minimalist black turtleneck. The setting is a bright, modern tech incubator with clean lines and high-key lighting. The style is contemporary luxury, emphasizing intelligence and forward-thinking leadership through a sharp, high-contrast visual approach." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoSkyFpLjQpYU3XYCcSvZwG6S8Biz1IgZr_Uk3MLMPxRO6DDbLPuVKpuD2QIrdfsC1nXW5ei_3iKe9RvawAv2e0ayk-griT64S1UiVITa3U2UCGCLyqSvqpr6dEZypTQvUr5n2K_SmUmC3wMDETLxA-Q35-bxwPXpOlkEZSqSRBjxCV5_gOLSWI2BGQ5RTY6qqT6T1tpAvEDfSYWfqCLJZr5hO2xI1aHMYiHn0-_LdT60MrM3drXh7a_6jhLxYmosYTe0w3AcImEc0"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Julian Chen</h4>
+<p class="text-xs text-on-surface-variant">Founder, NexaStream AI</p>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 border-l-4 border-primary-container flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"The team at AARC behaves like an extension of our internal executive board. They don't just record numbers; they provide genuine strategic insight."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An elegant older woman with silver hair, dressed in a professional black dress with gold jewelry. She is photographed in a high-end art gallery setting with soft, ambient lighting that highlights the luxurious textures of her attire. The mood is established, authoritative, and deeply respected, fitting for a seasoned business leader." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfFjtGF15esoiOK-HtWt2UdUa6mLhCaeZDY1r_l-LzxWL4ICyzpA4c-8WGKWiU0h9baaMXadFOnjBv6nM-ZPywZBe8duvRNdgXjGm3PAtwOvgU3XkBAthpE3ClbsD_6_MeEsYT7SLgB9K3tpLMX_IsT4kpoSeSJ9wM4y_zlKFzN_LbB56Uh4wAn8XNPmNBjA7h1Mzg6ucnSQIVltiASj-ROqLwg7kTBNOSdsB8j87RGsapUtGwBDBGhNKdSOr3cVEOcC2J0yLRiGbr"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Diane Abernathy</h4>
+<p class="text-xs text-on-surface-variant">Managing Partner, Abernathy &amp; Ross</p>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="reveal-up luxury-card-shadow card-hover bg-white p-8 rounded-lg transition-all duration-300 flex flex-col justify-between h-full">
+<div>
+<div class="mb-6 flex gap-1 text-primary-container">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed mb-8">"Reliable, responsive, and remarkably thorough. AARC removed the administrative burden of bookkeeping from my plate so I could focus on growth."</p>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A portrait of a male professional in a modern, light-filled creative studio. He is wearing a tailored grey sweater and has a relaxed but professional posture. The lighting is bright and airy, with a focus on a high-end, clean-mode aesthetic. The image communicates reliability and a modern approach to business management." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiQjkCv1TfrijcRj0g4ZAWNwccOy14jdBDLZ1KKs6b0F8G73HjpmxtMzfhKStzTgU7j0VBe_bCiSt_JH3oiFSo1poQEh9VtNwt2mElC9cBKlnM2tQ3UBUiSjBgFHMGRi28njd51eOTkbYfHB3crHhhRT_EHy-JWn6wQbzX0joFJirvGm_gPboFinB4FuFadfrmoLXh6gXHirMfxo3MJTgUrgvns9oou48T4cMJZkpQ5oHdtHqbCJxnW7Y-uEaGAVaJnli5pH6nWehB"/>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Oliver Kent</h4>
+<p class="text-xs text-on-surface-variant">COO, Kent &amp; Co. Manufacturing</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Call to Action Section -->
+<section class="py-section-gap bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<div class="reveal-up">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Ready to Experience Precision?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mx-auto mb-10">
+                    Join our network of sophisticated business owners who have elevated their financial management with AARC.
+                </p>
+<button class="bg-primary-container text-on-primary-container px-12 py-5 font-label-caps text-label-caps font-extrabold uppercase tracking-widest hover:scale-[1.03] transition-all duration-300 rounded shadow-lg">
+                    Join Our Clients
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-inverse-surface dark:bg-on-background w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop">
+<div class="md:col-span-1">
+<div class="font-display-lg text-headline-md text-primary-fixed mb-6">AARC</div>
+<p class="text-surface-variant text-body-md pr-8">Redefining modern bookkeeping with meticulous precision and sophisticated strategy for the modern enterprise.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary-fixed font-bold font-label-caps mb-2">QUICK LINKS</h5>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">About Us</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Our Services</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary-fixed font-bold font-label-caps mb-2">RESOURCES</h5>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Client Portal</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Strategic Insights</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-primary-fixed font-bold font-label-caps mb-2">NEWSLETTER</h5>
+<p class="text-surface-variant text-sm mb-4">Subscribe to receive our monthly financial briefings.</p>
+<div class="flex">
+<input class="bg-surface-container-low border-none p-3 w-full text-on-surface rounded-l" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-white px-4 rounded-r material-symbols-outlined">arrow_forward</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-16 pt-8 border-t border-surface-variant/20 flex flex-col md:flex-row justify-between items-center text-surface-variant text-body-md opacity-60">
+<div>© 2024 AARC Smart Bookkeeping. All rights reserved.</div>
+<div class="flex gap-6 mt-4 md:mt-0">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed">verified_user</span>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll interaction for navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('nav-scrolled');
+            } else {
+                nav.classList.remove('nav-scrolled');
+            }
+        });
+
+        // Intersection Observer for Reveal animations
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-up').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Simple button interaction
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'scale(0.97)';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = '';
+            });
+        });
+    </script>
+</body></html>

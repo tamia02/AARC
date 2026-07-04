@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | AARC Smart Bookkeeping</title>
+<meta content="Professional bookkeeping services for modern businesses, specializing in energy and solar sectors." name="description"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#adabaa",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-container": "#cfa550",
+                        "on-background": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#a6f0e9",
+                        "on-primary-fixed-variant": "#5d4200",
+                        "on-secondary-fixed": "#00201e",
+                        "tertiary-fixed-dim": "#c9c6c5",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "surface-tint": "#7a5904",
+                        "surface-bright": "#fbf9f8",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "primary": "#7a5904",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f0f0",
+                        "inverse-primary": "#edc068",
+                        "surface-container-high": "#eae8e7",
+                        "background": "#fbf9f8",
+                        "surface-container": "#efeded",
+                        "secondary-fixed": "#a6f0e9",
+                        "secondary-fixed-dim": "#8bd3cd",
+                        "primary-fixed-dim": "#edc068",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#543b00",
+                        "secondary": "#186964",
+                        "surface": "#fbf9f8",
+                        "tertiary-fixed": "#e5e2e1",
+                        "outline-variant": "#d2c5b2",
+                        "on-tertiary-container": "#403f3f",
+                        "surface-container-low": "#f5f3f3",
+                        "primary-fixed": "#ffdea4",
+                        "on-primary-fixed": "#261900",
+                        "outline": "#807666",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#216f6a",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#4e4637",
+                        "tertiary": "#5f5e5e",
+                        "inverse-surface": "#303030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .premium-shadow {
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .premium-shadow:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 20px 60px rgba(0,0,0,0.06);
+        }
+
+        .gold-border-draw {
+            position: relative;
+        }
+        
+        .gold-border-draw::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #7a5904;
+            transition: width 0.4s ease;
+        }
+
+        .gold-border-draw:hover::after {
+            width: 100%;
+        }
+
+        .sticky-nav-active {
+            background-color: #1b1c1c !important;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-500 bg-transparent backdrop-blur-md" id="top-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-unit h-20">
+<div class="flex items-center gap-2">
+<span class="font-display-lg text-headline-sm tracking-tighter text-primary dark:text-primary-fixed">AARC</span>
+</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-gutter">
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Pricing</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Testimonials</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:block bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps font-bold hover:scale-105 transition-transform duration-300">
+                    Get Started
+                </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-40 pb-24 md:pt-64 md:pb-32 bg-surface overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center max-w-3xl mx-auto reveal">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Bookkeeping Services</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant opacity-80 leading-relaxed">
+                    Meticulous financial oversight tailored for growing enterprises. We bring transparency, precision, and strategic insight to your daily operations.
+                </p>
+<div class="mt-12 w-24 h-1 bg-primary mx-auto opacity-30"></div>
+</div>
+</div>
+<!-- Background Element -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-secondary-container/10 -skew-x-12 transform origin-top pointer-events-none"></div>
+</header>
+<!-- Monthly Bookkeeping (White) -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center reveal">
+<div class="order-2 md:order-1">
+<div class="inline-block bg-primary-fixed text-on-primary-fixed px-3 py-1 font-label-caps text-label-caps mb-6">ESSENTIAL</div>
+<h2 class="font-headline-md text-headline-md mb-6">Monthly Bookkeeping</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Stay ahead of your finances with ongoing maintenance that captures every transaction. We provide real-time visibility into your cash flow and profitability, ensuring you're never making decisions in the dark.
+                    </p>
+<ul class="space-y-4 mb-8">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Transaction Categorization &amp; Reconciliation</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Accounts Payable &amp; Receivable Management</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span>Monthly Performance Reports (P&amp;L, Balance Sheet)</span>
+</li>
+</ul>
+</div>
+<div class="order-1 md:order-2">
+<div class="relative aspect-video bg-surface-container rounded-lg overflow-hidden premium-shadow">
+<img class="w-full h-full object-cover" data-alt="A high-end, minimalist workspace with a sleek laptop showing complex financial charts, a cup of coffee on a marble desk, and soft morning sunlight filtering through architectural windows. The scene exudes professional luxury and organized precision with a warm cream and gold color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQia34L6tGTDP6gpbL85wL_gJPDXLIO7FGR9Gd7fnc546aQY5K80OvfJH6S57rljPtThFN6QVUfmpBl-dFGD5UHjEWORx2uA0VSxRgMJpDzjV1HSwnbZVLsVfVafk-YV3gm-3-ojjqsTR9zzbi8URqM0xW_ay4nou6Yno1ew7vBJ5J9YamssCGckb6Je_3egPY5p6ga86Cd8P0J7IgB55z5XBLAlJib-un2PT4vHijVJDYMB1LciqDEzJi8WlVp-7Ab4GksbiMGwsP"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Catch-Up & Clean-Up (Warm Cream) -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center reveal">
+<div class="relative aspect-[4/5] bg-surface-container rounded-lg overflow-hidden premium-shadow">
+<img class="w-full h-full object-cover" data-alt="Close-up of a meticulously organized physical archive or bookshelf in a luxury office environment. The lighting is soft and warm, emphasizing the textures of premium paper and leather-bound notebooks. Gold accents from pens and desk accessories catch the light, suggesting restoration of order and historical clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZH9Gs723Whlgigkffkn1f6ne-ud4zLrjq35FqfHreW12MQBB4l3CpCKrC6QAOoGZKDdPsrs8mB2TwswTrID-hsJ6wG8xEo9stdbxlJKc0fGxMr9jXuut16XBnHXTtpl4YFeLtqA8FwscBv8oZh-3gc_mwlV9NHSsb1AVJxCLyrDNoPG1g_9_a6FTRzevANLgh4cOlwUdNU-oabJKAm89QmlKHRPMhZCK0cDNagChKuRXebavCE-2NATMJxhm8vJ_D_DDnbe3eggCL"/>
+</div>
+<div class="pl-0 md:pl-12">
+<div class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 font-label-caps text-label-caps mb-6">RESTORATION</div>
+<h2 class="font-headline-md text-headline-md mb-6">Catch-Up &amp; Clean-Up</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+                        Behind on your books? We specialize in untangling complex financial histories. Whether it's months or years of data, our meticulous approach restores your records to tax-ready perfection.
+                    </p>
+<div class="p-8 border-l-2 border-primary bg-surface-container-high/30 italic font-headline-sm text-on-surface opacity-90">
+                        "Turning financial chaos into audit-proof clarity is our hallmark service."
+                    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Bento Grid (Alternating / Mixed) -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter reveal">
+<!-- Payroll -->
+<div class="p-10 bg-surface-container-highest premium-shadow rounded-lg md:col-span-1">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">group</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">Payroll Setup &amp; Management</h3>
+<p class="text-on-surface-variant mb-6">Automated, accurate payroll that keeps your team happy and your business compliant with state and federal regulations.</p>
+</div>
+<!-- QBO Setup -->
+<div class="p-10 bg-white border border-outline-variant/30 premium-shadow rounded-lg md:col-span-2 flex flex-col md:flex-row gap-8 items-center">
+<div class="md:w-1/2">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">settings_suggest</span>
+<h3 class="font-headline-sm text-headline-sm mb-4">QuickBooks Online Setup</h3>
+<p class="text-on-surface-variant">Maximize the power of QBO with a custom chart of accounts, integrated apps, and optimized workflows designed for your specific industry needs.</p>
+</div>
+<div class="md:w-1/2 h-48 w-full rounded overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A minimalist digital interface showing clean, modern financial dashboards with golden data points and elegant sans-serif typography. The aesthetic is inspired by luxury fintech applications, featuring a high-contrast white and gold color scheme with ample negative space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALMP0bwKytjdpiCERseMu4fdFBruTDWBShmr-j2AJeaTjzuLB5iqQeUev9LqzBXcU8BO3v55RYnTAOLWCEvfDbp2dVZATjacNNRAy2wE8jSehFY2TEExlkiRXv0tReuedRU_4E9n70Y-KtsMIxXOfLL4lDNFDs6FVefYfUrmoD-Ye6S6C1hY7dyqQVNKGVbf3dpGcHsTHgXEofn5AN23pHy3miafQMGv9gcOcPC2keT2w8ZfER4vJ0opZMmqvNIvBHeUnk0hGJ6bur"/>
+</div>
+</div>
+<!-- Tax Prep Support -->
+<div class="p-10 bg-secondary text-on-secondary rounded-lg md:col-span-3 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-2/3">
+<h3 class="font-headline-md text-headline-md mb-4">Financial Support for Tax Prep</h3>
+<p class="text-secondary-fixed mb-6 leading-relaxed">We work hand-in-hand with your CPA. Our high-fidelity financial statements ensure that your tax professional has exactly what they need for an efficient, error-free filing season.</p>
+<a class="inline-flex items-center gap-2 text-secondary-fixed font-label-caps tracking-widest hover:translate-x-2 transition-transform" href="#">
+                            LEARN MORE <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="md:w-1/3 flex justify-center">
+<div class="w-32 h-32 border-4 border-primary-container/20 rounded-full flex items-center justify-center relative">
+<span class="material-symbols-outlined text-6xl">receipt_long</span>
+<div class="absolute -top-2 -right-2 w-8 h-8 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bonus Feature (Teal/Secondary) -->
+<section class="py-section-gap bg-secondary-container/20 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(circle, #186964 1px, transparent 1px); background-size: 32px 32px;"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-white p-12 md:p-20 premium-shadow rounded-lg border-t-8 border-primary flex flex-col md:flex-row gap-12 items-center reveal">
+<div class="md:w-1/2">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 bg-primary-container flex items-center justify-center rounded-full text-on-primary-container">
+<span class="material-symbols-outlined">wb_sunny</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">INDUSTRY SPECIALIZATION</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-6">Bookkeeping for Solar &amp; Energy Companies</h2>
+<p class="text-on-surface-variant font-body-lg mb-8">
+                        The energy sector requires specific handling of incentives, equipment depreciation, and long-term project accounting. We bring specialized expertise to ensure your renewable energy business remains as efficient financially as it is operationally.
+                    </p>
+<button class="bg-primary text-on-primary px-8 py-4 font-label-caps tracking-widest font-bold hover:scale-105 transition-all shadow-lg">
+                        VIEW SECTOR DETAILS
+                    </button>
+</div>
+<div class="md:w-1/2 w-full aspect-video rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A sweeping, artistic wide-angle shot of a solar farm during a golden hour sunset. The panels reflect the warm amber sky, creating a geometric pattern of light and shadow. The style is cinematic and high-end, emphasizing sustainability through a luxury lens with deep greens, golds, and blacks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5GKa8EgJD17nFyHhVfCLk5OcKabt1ghVDjwo5weUL-BQxU6Cs65HKG8kQeaQA6WcvPCWBY516WbY9asHwCZI_x4xKBiPAAhUIOvoz86LZ2e3J96GphyImQzShi3gVaFmYUdKglrGnkNJCoj31D7qB0zApmxcJ6SXy7-tYY5atid0Sf9Y3ESQUVtfT4l_ibbQD9XCZFti76I6Y_3IPW5UKMZ0VbgbzPzc_G-GQACLONoo1rP2Gx0uxSdDnYxB3YFhAl7g7rEiipnhs"/>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap bg-surface-container-highest">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center reveal">
+<h2 class="font-headline-md text-headline-md mb-8">Not Sure Which Service You Need?</h2>
+<p class="max-w-2xl mx-auto mb-12 text-on-surface-variant">Our diagnostic session helps identify gaps in your current financial tracking and builds a roadmap for your business growth.</p>
+<a class="inline-block border-2 border-primary text-primary px-10 py-5 font-label-caps text-label-caps font-bold hover:bg-primary hover:text-on-primary transition-all duration-300" href="#">
+                Book a Free Consultation
+            </a>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-background py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter text-surface-variant">
+<div class="md:col-span-2">
+<div class="font-display-lg text-headline-md text-primary-fixed mb-6">AARC</div>
+<p class="max-w-sm mb-8 opacity-70">
+                        Elevating financial management for the discerning business owner through meticulous bookkeeping and strategic insight.
+                    </p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary-fixed mb-6 uppercase tracking-widest">Navigate</h4>
+<ul class="space-y-4">
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary-fixed mb-6 uppercase tracking-widest">Connect</h4>
+<div class="flex gap-4 mb-8">
+<a class="w-10 h-10 border border-outline/30 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+<a class="w-10 h-10 border border-outline/30 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">mail</span>
+</a>
+<a class="w-10 h-10 border border-outline/30 flex items-center justify-center hover:bg-primary-fixed hover:text-on-primary-fixed transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">location_on</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-10 border-t border-outline/10 text-sm opacity-50 flex flex-col md:flex-row justify-between gap-4">
+<span>© 2024 AARC Smart Bookkeeping. All rights reserved.</span>
+<div class="flex gap-6">
+<a class="hover:underline" href="#">LinkedIn</a>
+<a class="hover:underline" href="#">Instagram</a>
+<a class="hover:underline" href="#">Twitter</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Scroll Entrance Animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            el.classList.add('fade-in-up');
+            observer.observe(el);
+        });
+
+        // Sticky Nav Transformation
+        const nav = document.getElementById('top-nav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                nav.classList.add('sticky-nav-active');
+                nav.classList.remove('bg-transparent');
+                nav.classList.add('bg-on-background/90');
+                // Target nav links to be white when sticky
+                document.querySelectorAll('#top-nav a, #top-nav span').forEach(el => {
+                    if(!el.classList.contains('text-primary')) {
+                        el.classList.add('text-white');
+                    }
+                });
+            } else {
+                nav.classList.remove('sticky-nav-active');
+                nav.classList.add('bg-transparent');
+                nav.classList.remove('bg-on-background/90');
+                document.querySelectorAll('#top-nav a, #top-nav span').forEach(el => {
+                    if(!el.classList.contains('text-primary')) {
+                        el.classList.remove('text-white');
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

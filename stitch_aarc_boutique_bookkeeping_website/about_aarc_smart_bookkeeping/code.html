@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | AARC Smart Bookkeeping</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Montserrat:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .luxury-shadow {
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.04);
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to bottom, #CFA550, #7a5904) 1;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#adabaa",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-container": "#cfa550",
+                        "on-background": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#a6f0e9",
+                        "on-primary-fixed-variant": "#5d4200",
+                        "on-secondary-fixed": "#00201e",
+                        "tertiary-fixed-dim": "#c9c6c5",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "surface-tint": "#7a5904",
+                        "surface-bright": "#fbf9f8",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "primary": "#7a5904",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f0f0",
+                        "inverse-primary": "#edc068",
+                        "surface-container-high": "#eae8e7",
+                        "background": "#fbf9f8",
+                        "surface-container": "#efeded",
+                        "secondary-fixed": "#a6f0e9",
+                        "secondary-fixed-dim": "#8bd3cd",
+                        "primary-fixed-dim": "#edc068",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#543b00",
+                        "secondary": "#186964",
+                        "surface": "#fbf9f8",
+                        "tertiary-fixed": "#e5e2e1",
+                        "outline-variant": "#d2c5b2",
+                        "on-tertiary-container": "#403f3f",
+                        "surface-container-low": "#f5f3f3",
+                        "primary-fixed": "#ffdea4",
+                        "on-primary-fixed": "#261900",
+                        "outline": "#807666",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#216f6a",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#4e4637",
+                        "tertiary": "#5f5e5e",
+                        "inverse-surface": "#303030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["36px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent transition-colors duration-500 backdrop-blur-md" id="main-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-desktop py-unit">
+<div class="font-display-lg text-headline-sm tracking-tighter text-primary">AARC</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Pricing</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Testimonials</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-label-caps text-label-caps rounded-DEFAULT hover:scale-105 transition-all duration-300 font-bold">
+                Get Started
+            </button>
+</div>
+</nav>
+<!-- Hero Section / Meet Raksha -->
+<header class="relative min-h-[819px] flex items-center pt-32 overflow-hidden bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center relative z-10">
+<div class="reveal">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-4 block">EXPERT PARTNERSHIP</span>
+<h1 class="font-display-lg text-display-lg mb-6 leading-none">Meet Raksha — <br/><span class="text-primary italic">Your Bookkeeping Partner</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    With an MBA and MSA in Accounting, I bring a unique blend of strategic insight and meticulous precision to your financial landscape. My mission is simple: transforming complex, messy books into audit-ready masterpieces that fuel your growth.
+                </p>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 font-label-caps text-label-caps rounded-DEFAULT hover:scale-105 transition-all duration-300 font-bold shadow-lg">
+                        Let's Talk About Your Business
+                    </button>
+</div>
+</div>
+<div class="relative reveal delay-200">
+<div class="aspect-[4/5] rounded-DEFAULT overflow-hidden luxury-shadow">
+<img class="w-full h-full object-cover" data-alt="A professional, high-end portrait of a female accountant in a minimalist, luxury office environment. She is wearing a sophisticated blazer, smiling warmly but confidently at the camera. The background features warm cream tones, subtle metallic gold accents, and large windows with soft, natural light, reflecting an established and meticulous brand personality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm4eCWtFbPTip8P_dr6cgl7lPdiZ380AJVqnJpxKjAFI3H9PordwBScqSdw6wCJ1F3nMdGL6rLEBX5YvEIgaAVKjxf_P9LDNv7inXQrkvtvuOosyiOuRyt_NJw5w-atSVhU4RI_zdENgqi4Tvg7kCLCuyMn09W3dV9I3Ez9I1hxKmkZspl4bKpjMtQeDKoaJFZ7yyZuB5_UPtjsgIcK9AOX8DETrlNdK2uqcxbBQgeaE5RcIczzGbFgXSp6jffVpF-bYZ2aDWOKZVX"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-surface p-8 luxury-shadow border-l-4 border-primary">
+<p class="font-display-lg text-headline-sm italic">"Clarity is the ultimate luxury."</p>
+</div>
+</div>
+</div>
+<!-- Atmospheric WebGL placeholder or visual element -->
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+
+</div>
+</header>
+<!-- Bio & Experience Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-5 reveal">
+<h2 class="font-display-lg text-headline-md mb-8">Professional Excellence, <br/>Personal Commitment</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        My career has been defined by navigating high-stakes financial environments—from the rigorous demands of hospital accounting to the dynamic, fast-paced world of solar and renewable energy public firms.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        I understand that behind every spreadsheet is a vision. I don't just categorize transactions; I ensure your financial narrative is clear, compliant, and ready for any level of scrutiny.
+                    </p>
+</div>
+<div class="lg:col-start-7 lg:col-span-6 space-y-gutter reveal delay-200">
+<div class="p-8 bg-surface-container-lowest border-l-2 border-primary-container luxury-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h3 class="font-label-caps text-label-caps uppercase tracking-wider">Credentials</h3>
+</div>
+<ul class="space-y-3 font-body-md text-on-surface">
+<li class="flex items-center gap-2">MBA - Master of Business Administration</li>
+<li class="flex items-center gap-2">MSA - Master of Science in Accounting</li>
+</ul>
+</div>
+<div class="p-8 bg-surface-container-lowest border-l-2 border-primary-container luxury-shadow hover:translate-y-[-4px] transition-transform duration-300">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">domain</span>
+<h3 class="font-label-caps text-label-caps uppercase tracking-wider">Experience</h3>
+</div>
+<ul class="space-y-3 font-body-md text-on-surface">
+<li class="flex items-center gap-2"><span class="text-primary">•</span> Hospital &amp; Healthcare Systems</li>
+<li class="flex items-center gap-2"><span class="text-primary">•</span> Public Accounting Firms</li>
+<li class="flex items-center gap-2"><span class="text-primary">•</span> Solar &amp; Energy Sectors</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- My Approach Section -->
+<section class="py-section-gap bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop relative z-10">
+<div class="text-center mb-24 reveal">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] mb-4 block">THE METHODOLOGY</span>
+<h2 class="font-display-lg text-display-lg">My Approach</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Accuracy -->
+<div class="reveal delay-100 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-8 luxury-shadow border border-primary-container/20">
+<span class="material-symbols-outlined text-primary text-4xl">precision_manufacturing</span>
+</div>
+<h4 class="font-display-lg text-headline-sm mb-4">Unwavering Accuracy</h4>
+<p class="font-body-md text-on-surface-variant leading-relaxed px-4">
+                        In financial reporting, there is no room for "close enough." I meticulously verify every entry to ensure your books are flawless and audit-ready at all times.
+                    </p>
+</div>
+<!-- Communication -->
+<div class="reveal delay-200 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-8 luxury-shadow border border-primary-container/20">
+<span class="material-symbols-outlined text-primary text-4xl">chat_bubble</span>
+</div>
+<h4 class="font-display-lg text-headline-sm mb-4">Clear Communication</h4>
+<p class="font-body-md text-on-surface-variant leading-relaxed px-4">
+                        Complex data shouldn't be confusing. I translate technical accounting jargon into clear, actionable insights that help you make better business decisions.
+                    </p>
+</div>
+<!-- Patience -->
+<div class="reveal delay-300 flex flex-col items-center text-center">
+<div class="w-20 h-20 rounded-full bg-surface-container flex items-center justify-center mb-8 luxury-shadow border border-primary-container/20">
+<span class="material-symbols-outlined text-primary text-4xl">all_inclusive</span>
+</div>
+<h4 class="font-display-lg text-headline-sm mb-4">Patience &amp; Partnership</h4>
+<p class="font-body-md text-on-surface-variant leading-relaxed px-4">
+                        Whether your books are a month behind or years in disarray, I approach every project with patience and a commitment to long-term financial health.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Decorative subtle pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#CFA550 1px, transparent 1px); background-size: 40px 40px;"></div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-primary text-on-primary p-20 text-center relative overflow-hidden luxury-shadow rounded-DEFAULT">
+<!-- Background Animation -->
+<div class="absolute inset-0 opacity-10">
+
+</div>
+<div class="relative z-10 reveal">
+<h2 class="font-display-lg text-display-lg mb-8">Ready to elevate your financial clarity?</h2>
+<p class="font-body-lg text-body-lg mb-12 max-w-2xl mx-auto text-primary-fixed">
+                        Let's work together to create a sustainable, audit-ready foundation for your business's future.
+                    </p>
+<button class="bg-primary-container text-on-primary-container px-12 py-5 font-label-caps text-label-caps rounded-DEFAULT hover:scale-105 transition-all duration-300 font-bold text-lg shadow-xl">
+                        Let's Talk About Your Business
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-background text-primary-fixed w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-desktop">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md text-primary-fixed mb-6">AARC</div>
+<p class="font-body-md text-surface-variant leading-relaxed">
+                    Sophisticated bookkeeping solutions for established enterprises and growing ventures.
+                </p>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed-dim">SERVICES</h4>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Tax Preparation</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Cleanup &amp; Catchup</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Monthly Support</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed-dim">RESOURCES</h4>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Careers</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-4">
+<h4 class="font-label-caps text-label-caps text-primary-fixed-dim">CONTACT</h4>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a>
+<p class="text-surface-variant">office@aarc-bookkeeping.com</p>
+<div class="flex space-x-4 mt-2">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary-fixed transition-colors">mail</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-surface-variant/20 text-center md:text-left">
+<p class="font-body-md text-body-md text-surface-variant">© 2024 AARC Smart Bookkeeping. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Scroll reveal logic
+        const reveals = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        reveals.forEach(reveal => revealObserver.observe(reveal));
+
+        // Sticky Nav logic
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-inverse-surface', 'shadow-xl');
+                nav.classList.remove('bg-transparent');
+                // Adjusting text for dark bg contrast
+                nav.querySelectorAll('.font-label-caps').forEach(el => {
+                    if(!el.classList.contains('text-primary')) {
+                         el.classList.add('text-primary-fixed');
+                         el.classList.remove('text-on-surface');
+                    }
+                });
+            } else {
+                nav.classList.remove('bg-inverse-surface', 'shadow-xl');
+                nav.classList.add('bg-transparent');
+                nav.querySelectorAll('.font-label-caps').forEach(el => {
+                    if(!el.classList.contains('text-primary')) {
+                        el.classList.remove('text-primary-fixed');
+                        el.classList.add('text-on-surface');
+                    }
+                });
+            }
+        });
+    </script>
+</body></html>

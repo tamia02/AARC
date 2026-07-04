@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AARC Smart Bookkeeping | Clarity for Your Business</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e4e2e2",
+                        "surface-variant": "#e4e2e2",
+                        "tertiary-container": "#adabaa",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "primary-container": "#cfa550",
+                        "on-background": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-dim": "#dbdad9",
+                        "secondary-container": "#a6f0e9",
+                        "on-primary-fixed-variant": "#5d4200",
+                        "on-secondary-fixed": "#00201e",
+                        "tertiary-fixed-dim": "#c9c6c5",
+                        "on-secondary-fixed-variant": "#00504c",
+                        "surface-tint": "#7a5904",
+                        "surface-bright": "#fbf9f8",
+                        "on-tertiary-fixed-variant": "#474646",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "primary": "#7a5904",
+                        "on-error-container": "#93000a",
+                        "inverse-on-surface": "#f2f0f0",
+                        "inverse-primary": "#edc068",
+                        "surface-container-high": "#eae8e7",
+                        "background": "#fbf9f8",
+                        "surface-container": "#efeded",
+                        "secondary-fixed": "#a6f0e9",
+                        "secondary-fixed-dim": "#8bd3cd",
+                        "primary-fixed-dim": "#edc068",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#543b00",
+                        "secondary": "#186964",
+                        "surface": "#fbf9f8",
+                        "tertiary-fixed": "#e5e2e1",
+                        "outline-variant": "#d2c5b2",
+                        "on-tertiary-container": "#403f3f",
+                        "surface-container-low": "#f5f3f3",
+                        "primary-fixed": "#ffdea4",
+                        "on-primary-fixed": "#261900",
+                        "outline": "#807666",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#216f6a",
+                        "on-surface": "#1b1c1c",
+                        "on-surface-variant": "#4e4637",
+                        "tertiary": "#5f5e5e",
+                        "inverse-surface": "#303030"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "margin-desktop": "64px",
+                        "gutter": "32px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-caps": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "headline-sm": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "display-lg-mobile": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .ambient-shadow { box-shadow: 0px 10px 40px rgba(0,0,0,0.04); }
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-8px); box-shadow: 0px 20px 50px rgba(0,0,0,0.08); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .nav-scrolled { background-color: #303030; color: white !important; }
+        .primary-btn { background-color: #CFA550; color: #1b1c1c; transition: transform 0.3s ease; }
+        .primary-btn:hover { transform: scale(1.03); }
+        .secondary-btn { border: 1px solid #CFA550; color: #CFA550; transition: background-color 0.3s ease; }
+        .secondary-btn:hover { background-color: rgba(207, 165, 80, 0.1); }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 backdrop-blur-md transition-all duration-500 bg-transparent py-4" id="navbar">
+<div class="max-w-container-max mx-auto px-margin-desktop flex justify-between items-center">
+<div class="flex items-center gap-4">
+<img alt="AARC Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLud8_KXAxDfPIIgXNSrIT9r18zortj3B1ddSc6XLQurlKunmuE6AMtYJiU-2qFNRAIqKpBJd54Ihs2TYwl25Da3uLgsE7ekEaZhH1t99YtkRKuEommhhcjcLGfH20f9SX1iwwreO73QUs4dh6cUyOd05rM8Ab6okoSLal19QLoGqtbQ3a8f8QkQJX28lfxkkxefR2_iO9z5Gnvq5TCA9-iqzPXVEmTuXUZqFXcpXCbTq95muRhxNKKZ7Lu5"/>
+<span class="font-display-lg text-headline-sm tracking-tighter text-primary">AARC</span>
+</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 uppercase tracking-widest" href="#home">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300 uppercase tracking-widest" href="#services">Services</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300 uppercase tracking-widest" href="#about">About</a>
+<a class="font-label-caps text-label-caps text-on-surface hover:scale-105 transition-transform duration-300 uppercase tracking-widest" href="#testimonials">Testimonials</a>
+<button class="primary-btn px-6 py-3 font-label-caps text-label-caps uppercase rounded-none shadow-lg">Get Started</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-32 overflow-hidden bg-surface-bright" id="home">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10">
+<div class="lg:col-span-8 reveal">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6 leading-tight">
+                    Bookkeeping That Gives You <span class="italic text-primary">Clarity</span>, Not Confusion.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-10">
+                    Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, and across Northwest Houston.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="primary-btn px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest text-on-background">Book a Free Consultation</button>
+<button class="secondary-btn px-10 py-5 font-label-caps text-label-caps uppercase tracking-widest">View Our Services</button>
+</div>
+</div>
+</div>
+<!-- Trust Strip -->
+<div class="absolute bottom-0 w-full bg-surface-container-low py-6 border-t border-outline-variant/30">
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-wrap justify-between items-center gap-6 text-on-surface-variant opacity-80">
+<span class="font-label-caps text-label-caps tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span> MBA &amp; MSA CREDENTIALED
+                </span>
+<span class="font-label-caps text-label-caps tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">domain</span> HOSPITAL, PUBLIC &amp; SOLAR EXPERIENCE
+                </span>
+<span class="font-label-caps text-label-caps tracking-widest flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span> PROUDLY SERVING CYPRESS &amp; TOMBALL, TX
+                </span>
+</div>
+</div>
+</header>
+<!-- Pain Points Section -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center">
+<div class="reveal">
+<div class="inline-block px-4 py-1 bg-primary/10 text-primary font-label-caps text-[10px] tracking-[0.2em] uppercase mb-6">The Struggle</div>
+<h2 class="font-display-lg text-headline-md mb-8">You Didn't Start Your Business to Manage Spreadsheets</h2>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Books Falling Behind</h4>
+<p class="text-on-surface-variant">The pile of receipts and unrecorded transactions is growing weekly.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Tax Season Dread</h4>
+<p class="text-on-surface-variant">Stress levels peak every April because your financial records aren't ready.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">No Cash Flow Visibility</h4>
+<p class="text-on-surface-variant">You don't actually know if you're making money or just moving it around.</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-primary mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div>
+<h4 class="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Outgrown DIY Bookkeeping</h4>
+<p class="text-on-surface-variant">Your business is scaling, and manual entry is no longer sustainable.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal relative h-[500px] bg-surface-container rounded-sm overflow-hidden ambient-shadow">
+<img class="w-full h-full object-cover grayscale-[20%] hover:scale-105 transition-transform duration-700" data-alt="A professional, minimalist overhead workspace featuring a sleek laptop displaying complex financial charts, a cup of coffee, and a fountain pen on a neutral grey surface. The lighting is bright and airy, emphasizing a high-end, luxury bookkeeping brand aesthetic with clean lines and a sense of meticulous organization." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVhrA1wPDiPjP3RnuLdu30G6_HwA8bi08-ysVAeVALnNfBtxuAhhyrbgHhyCwWB8OxCwjNqEqQb6sDwFEIORrWYfc2kCW8ee1oIeJPne5mOyo7plh7V9Yqd0E0FonK2BmsIx9Fsqqvs4vHKbxKAaJJcn0UVWF0wy22rtoH5vhYBpRCxXn55x_E9t93YIxmtm-iS1eQ4aI8_trQRpPW8OsTj3cT5NnsgoIBP2SovesD5-bGvqpgald7bARyXHw-GRfN0H1Ep_m-k7BS"/>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="py-section-gap bg-surface-container-low" id="services">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-20 reveal">
+<h2 class="font-display-lg text-headline-md mb-6">Specialized Financial Services</h2>
+<p class="text-on-surface-variant">Precise financial management tailored to the unique needs of Texas businesses.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap- gutter">
+<!-- Card 1 -->
+<div class="bg-white p-8 ambient-shadow hover-lift flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">calendar_month</span>
+<h3 class="font-bold text-on-surface mb-4 h-12 flex items-center">Monthly Bookkeeping</h3>
+<p class="text-on-surface-variant text-sm">Regular reconciliation and reporting to keep your finger on the pulse.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-white p-8 ambient-shadow hover-lift flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">history</span>
+<h3 class="font-bold text-on-surface mb-4 h-12 flex items-center">Catch-Up &amp; Clean-Up</h3>
+<p class="text-on-surface-variant text-sm">Organizing historical data to get your business back on solid ground.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-white p-8 ambient-shadow hover-lift flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">payments</span>
+<h3 class="font-bold text-on-surface mb-4 h-12 flex items-center">Payroll Management</h3>
+<p class="text-on-surface-variant text-sm">End-to-end payroll setup ensuring your team is paid on time, every time.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-white p-8 ambient-shadow hover-lift flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">settings</span>
+<h3 class="font-bold text-on-surface mb-4 h-12 flex items-center">QBO Optimization</h3>
+<p class="text-on-surface-variant text-sm">QuickBooks Online setup and fine-tuning for maximum efficiency.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-white p-8 ambient-shadow hover-lift flex flex-col items-center text-center reveal">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">account_balance</span>
+<h3 class="font-bold text-on-surface mb-4 h-12 flex items-center">Tax Prep Support</h3>
+<p class="text-on-surface-variant text-sm">Comprehensive financial documentation to simplify your tax filing process.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us Section -->
+<section class="py-section-gap relative overflow-hidden bg-on-background text-white">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center relative z-10">
+<div class="reveal">
+<h2 class="font-display-lg text-headline-md mb-8">Not Just Numbers. Clarity.</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-6 group">
+<div class="h-14 w-14 border border-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<span class="text-body-lg font-bold tracking-tight uppercase">Strategic Insight vs. Data Entry</span>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="h-14 w-14 border border-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<span class="text-body-lg font-bold tracking-tight uppercase">High-Level Compliance Standards</span>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="h-14 w-14 border border-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<span class="text-body-lg font-bold tracking-tight uppercase">Real-Time Financial Reporting</span>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="h-14 w-14 border border-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+<span class="material-symbols-outlined">psychology</span>
+</div>
+<span class="text-body-lg font-bold tracking-tight uppercase">Expertise Across Diversified Sectors</span>
+</li>
+<li class="flex items-center gap-6 group">
+<div class="h-14 w-14 border border-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+<span class="material-symbols-outlined">handshake</span>
+</div>
+<span class="text-body-lg font-bold tracking-tight uppercase">Dedicated Local Partnership</span>
+</li>
+</ul>
+</div>
+<div class="reveal">
+<div class="aspect-square bg-surface-variant p-2">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a high-end luxury watch mechanism and a gold-plated fountain pen lying on an expensive ledger. The lighting highlights metallic textures and fine craftsmanship, symbolizing the precision and meticulous nature of professional financial management for elite businesses. The color palette consists of warm golds and deep charcoals." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVstLOZGcJzjzostwz-nJv4nCWoOHH9kKkj8NeoETvgrUsKhg7_uN75CYWj-24VGf0IAbqZPOvbS1cQFNQZYyH8YFly8_Kc9UJMlzNNKp8E-CuNXwVoeBFm7lQ1JWTwFsTV2NYLW4QXcn0GdNwrmbUXIRuaofq5lxzIp177ykqbx0wZI2kqn4cLJXbUMgscmfDlAFbPY53-VgUC6k-2t3xJa1UcXntvCggfNxwp-KKQflHEbQ8oCscv7dULmUYKx8pNX2VeCw5c24E"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Founder Preview -->
+<section class="py-section-gap bg-surface" id="about">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row gap-gutter items-center">
+<div class="w-full md:w-1/3 reveal">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-primary"></div>
+<img class="w-full h-auto ambient-shadow grayscale-[10%] rounded-sm" data-alt="A professional headshot of a friendly and experienced female bookkeeper in her 40s. She is dressed in smart business casual attire, standing in a bright, modern office with soft natural light streaming in. The mood is warm, trustworthy, and professional, reflecting a local Cypress, Texas business owner's reliability and expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-3CaOwM7UUgZTPVgAYE71HOrI2bKi-tlQPva_k8dnI2mAi05q5P0CmkZOO9K0F28Ix1otM7ZEPH11n8IY1lElBIojjMJdYSEywahfZx2gQhGdJNGuyJPGdGpoHTVsAucEDizkJYP22o6QOmMNei2ymPhhG3MMHyEuSSiAMXTPfwZUOB_KIe32YfIkJETipJ4-csUHrS-OrPDEAfbPHZLKWA3_IuyEx_hb8_IQb7lX7nVPaGXEFvL5mFHVW5QDPGp67kCEpjBbunKf"/>
+</div>
+</div>
+<div class="w-full md:w-2/3 reveal">
+<div class="inline-block px-4 py-1 bg-primary/10 text-primary font-label-caps text-[10px] tracking-[0.2em] uppercase mb-6">Leadership</div>
+<h2 class="font-display-lg text-headline-md mb-6">Meet Your Cypress &amp; Tomball Area Bookkeeper</h2>
+<p class="text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and the solar energy sector. I founded AARC Smart Bookkeeping to help local business owners regain their time and confidence through crystal-clear financial management.
+                    </p>
+<button class="secondary-btn px-8 py-4 font-label-caps text-label-caps uppercase tracking-widest flex items-center gap-2 group">
+                        Read My Full Story 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Who We Serve -->
+<section class="py-section-gap bg-surface-container-low border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center">
+<h2 class="font-display-lg text-headline-sm mb-12 uppercase tracking-[0.2em]">Industries We Empower</h2>
+<div class="flex flex-wrap justify-center gap-4 reveal">
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Small Businesses</span>
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Startups</span>
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Professional Services</span>
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Solar &amp; Energy Tech</span>
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Healthcare Practices</span>
+<span class="px-8 py-3 bg-white border border-outline-variant text-on-surface font-label-caps text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors cursor-default">Construction &amp; Trades</span>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-surface" id="testimonials">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16 reveal">
+<h2 class="font-display-lg text-headline-md mb-4">Client Voices</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-white p-10 border border-outline-variant/10 ambient-shadow reveal">
+<div class="text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface-variant mb-8">"AARC transformed our messy spreadsheet system into a professional dashboard. Tax season was a breeze for the first time in years."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest"></div>
+<div>
+<p class="font-bold text-sm uppercase">Sarah J.</p>
+<p class="text-[10px] text-primary tracking-widest uppercase">Solar Solutions LLC</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-10 border border-outline-variant/10 ambient-shadow reveal" style="transition-delay: 100ms;">
+<div class="text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface-variant mb-8">"The expertise from someone with an MBA background really shows. It's not just bookkeeping; it's strategic advice for my firm."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest"></div>
+<div>
+<p class="font-bold text-sm uppercase">David M.</p>
+<p class="text-[10px] text-primary tracking-widest uppercase">Cypress Law Group</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-10 border border-outline-variant/10 ambient-shadow reveal" style="transition-delay: 200ms;">
+<div class="text-primary-container mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="italic text-on-surface-variant mb-8">"Fast, reliable, and incredibly organized. I finally feel like I have full control over my business's financial future."</p>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest"></div>
+<div>
+<p class="font-bold text-sm uppercase">Elena R.</p>
+<p class="text-[10px] text-primary tracking-widest uppercase">Tomball Design Studio</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="bg-on-background p-12 md:p-24 text-center reveal relative overflow-hidden">
+<div class="absolute inset-0 opacity-20">
+
+</div>
+<div class="relative z-10">
+<h2 class="font-display-lg text-headline-md text-white mb-8">Ready for Books You Can Actually Trust?</h2>
+<p class="text-surface-bright/70 mb-12 max-w-xl mx-auto font-body-lg">Schedule your free 30-minute consultation today and start your journey toward financial clarity.</p>
+<button class="primary-btn px-12 py-5 font-label-caps text-label-caps uppercase tracking-widest">Get Your Free Consultation</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-background py-section-gap text-surface-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-1">
+<img alt="AARC Logo" class="h-16 w-auto mb-6 grayscale brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLud8_KXAxDfPIIgXNSrIT9r18zortj3B1ddSc6XLQurlKunmuE6AMtYJiU-2qFNRAIqKpBJd54Ihs2TYwl25Da3uLgsE7ekEaZhH1t99YtkRKuEommhhcjcLGfH20f9SX1iwwreO73QUs4dh6cUyOd05rM8Ab6okoSLal19QLoGqtbQ3a8f8QkQJX28lfxkkxefR2_iO9z5Gnvq5TCA9-iqzPXVEmTuXUZqFXcpXCbTq95muRhxNKKZ7Lu5"/>
+<p class="font-body-md text-sm text-surface-variant/80">Providing meticulous financial oversight for Northwest Houston's most ambitious entrepreneurs.</p>
+</div>
+<div>
+<h4 class="font-label-caps text-primary-fixed mb-6 uppercase tracking-widest">Quick Links</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-primary-fixed-dim transition-colors" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-primary-fixed mb-6 uppercase tracking-widest">Service Areas</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li>Cypress, TX</li>
+<li>Tomball, TX</li>
+<li>The Woodlands, TX</li>
+<li>Northwest Houston</li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-caps text-primary-fixed mb-6 uppercase tracking-widest">Contact</h4>
+<p class="text-sm mb-4">Inquiry@AARCSmartBooks.com</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">hub</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">linked_services</span>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center">
+<p class="font-body-md text-xs opacity-60">© 2024 AARC Smart Bookkeeping. All rights reserved.</p>
+</div>
+</footer>
+<script>
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-inverse-surface', 'shadow-xl', 'py-3');
+                nav.classList.remove('bg-transparent', 'py-4');
+                document.querySelectorAll('#navbar a, #navbar span').forEach(el => {
+                    if(!el.classList.contains('primary-btn')) el.classList.add('text-white');
+                });
+            } else {
+                nav.classList.remove('bg-inverse-surface', 'shadow-xl', 'py-3');
+                nav.classList.add('bg-transparent', 'py-4');
+                document.querySelectorAll('#navbar a, #navbar span').forEach(el => {
+                   if(!el.classList.contains('primary-btn')) el.classList.remove('text-white');
+                });
+            }
+        });
+    </script>
+</body></html>

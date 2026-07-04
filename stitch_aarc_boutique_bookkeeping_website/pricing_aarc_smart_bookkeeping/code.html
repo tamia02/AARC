@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing | AARC Smart Bookkeeping</title>
+<meta content="Simple, transparent bookkeeping pricing tailored to your business volume." name="description"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-highest": "#e4e2e2",
+                    "surface-variant": "#e4e2e2",
+                    "tertiary-container": "#adabaa",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "primary-container": "#cfa550",
+                    "on-background": "#1b1c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#dbdad9",
+                    "secondary-container": "#a6f0e9",
+                    "on-primary-fixed-variant": "#5d4200",
+                    "on-secondary-fixed": "#00201e",
+                    "tertiary-fixed-dim": "#c9c6c5",
+                    "on-secondary-fixed-variant": "#00504c",
+                    "surface-tint": "#7a5904",
+                    "surface-bright": "#fbf9f8",
+                    "on-tertiary-fixed-variant": "#474646",
+                    "on-secondary": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-error": "#ffffff",
+                    "primary": "#7a5904",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#f2f0f0",
+                    "inverse-primary": "#edc068",
+                    "surface-container-high": "#eae8e7",
+                    "background": "#fbf9f8",
+                    "surface-container": "#efeded",
+                    "secondary-fixed": "#a6f0e9",
+                    "secondary-fixed-dim": "#8bd3cd",
+                    "primary-fixed-dim": "#edc068",
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#543b00",
+                    "secondary": "#186964",
+                    "surface": "#fbf9f8",
+                    "tertiary-fixed": "#e5e2e1",
+                    "outline-variant": "#d2c5b2",
+                    "on-tertiary-container": "#403f3f",
+                    "surface-container-low": "#f5f3f3",
+                    "primary-fixed": "#ffdea4",
+                    "on-primary-fixed": "#261900",
+                    "outline": "#807666",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#216f6a",
+                    "on-surface": "#1b1c1c",
+                    "on-surface-variant": "#4e4637",
+                    "tertiary": "#5f5e5e",
+                    "inverse-surface": "#303030"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "gutter": "32px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"],
+                    "label-caps": ["Montserrat"],
+                    "body-lg": ["Montserrat"],
+                    "headline-sm": ["Playfair Display"],
+                    "body-md": ["Montserrat"],
+                    "display-lg-mobile": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                    "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                    "label-caps": ["12px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400" }],
+                    "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                    "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                    "display-lg-mobile": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .premium-shadow {
+            box-shadow: 0px 10px 40px rgba(0,0,0,0.04);
+        }
+        .premium-shadow-hover:hover {
+            box-shadow: 0px 20px 60px rgba(0,0,0,0.08);
+            transform: translateY(-8px);
+        }
+        .reveal-animation {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal-animation.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 200px;
+        }
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar (Fixed) -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-500 bg-transparent py-unit" id="top-nav">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="font-display-lg text-headline-sm tracking-tighter text-primary dark:text-primary-fixed">AARC</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright hover:scale-105 transition-transform duration-300" href="#">Services</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 hover:scale-105 transition-transform duration-300" href="#">Pricing</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright hover:scale-105 transition-transform duration-300" href="#">Testimonials</a>
+<a class="font-label-caps text-label-caps text-on-surface dark:text-surface-bright hover:scale-105 transition-transform duration-300" href="#">Contact</a>
+</div>
+<button class="hidden md:block bg-primary-container text-on-primary-container px-6 py-3 font-label-caps text-label-caps hover:scale-105 transition-all duration-300 shadow-sm">
+                Get Started
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero / Header Section -->
+<header class="relative pt-48 pb-24 md:pt-64 md:pb-32 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 opacity-10">
+<div class="w-full h-full bg-cover bg-center" data-alt="An exquisite architectural detail of a high-end financial district skyscraper, showcasing clean glass lines and golden sunlight reflecting off metallic surfaces. The atmosphere is sophisticated and orderly, using a light-mode palette of warm creams and signature gold. The overall mood is one of prestige and precision." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOci5_9asVTSO-uNartmFTsatvlSQdqsdCRjuTRtKqF_cLFOijnOZpLWegybeFVarAO51gzpGOBHBo-M6WrvT7lYki81aC7AtHW7KSZahINMastfWHIUs-JQZ6XjjorfkSH-1smIr8wQEDGptmXJyngJogvcQrERnPviZevQCi8EiRhcenIPqSapkm5c8uuxywNhgF-Kemx2q7oaeon0Rcs-LWgVn3rpfV-qI68EDBAnKHaH5xn1TY-qvsY6DHzC1LU6W8PZacNp07')"></div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 text-center">
+<h1 class="reveal-animation font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface max-w-3xl mx-auto mb-6">
+                Simple, Transparent Pricing
+            </h1>
+<p class="reveal-animation font-body-lg text-body-lg text-tertiary max-w-2xl mx-auto" style="transition-delay: 100ms;">
+                Financial precision tailored to the scale of your success. Our pricing varies by transaction volume to ensure you only pay for the meticulous attention your business requires.
+            </p>
+</div>
+</header>
+<!-- Pricing Cards Section -->
+<section class="py-section-gap bg-background">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Starter Package -->
+<div class="reveal-animation bg-white p-12 flex flex-col items-center text-center premium-shadow premium-shadow-hover transition-all duration-500 rounded" style="transition-delay: 200ms;">
+<div class="w-16 h-16 bg-surface-container mb-8 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">foundation</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Starter</h3>
+<p class="font-body-md text-body-md text-tertiary mb-10 flex-grow">
+                        Ideal for early-stage ventures and focused portfolios requiring essential monthly upkeep and financial clarity.
+                    </p>
+<div class="w-full h-[1px] bg-outline-variant mb-10"></div>
+<ul class="text-left w-full space-y-4 mb-12 font-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Monthly Reconciliation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Basic Financial Statements</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Dedicated Bookkeeper</li>
+</ul>
+<button class="w-full border border-primary-container text-primary font-label-caps text-label-caps py-4 hover:bg-primary-container hover:text-white transition-all duration-300">
+                        Get a Personalized Quote
+                    </button>
+</div>
+<!-- Growth Package -->
+<div class="reveal-animation bg-white p-12 flex flex-col items-center text-center premium-shadow premium-shadow-hover transition-all duration-500 rounded relative z-10 border-t-4 border-primary-container" style="transition-delay: 300ms;">
+<div class="absolute -top-4 bg-primary-container text-on-primary-container font-label-caps text-[10px] tracking-widest px-4 py-1">RECOMMENDED</div>
+<div class="w-16 h-16 bg-primary-fixed mb-8 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">trending_up</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Growth</h3>
+<p class="font-body-md text-body-md text-tertiary mb-10 flex-grow">
+                        Sophisticated bookkeeping for expanding businesses with moderate transaction volume and multi-channel revenue streams.
+                    </p>
+<div class="w-full h-[1px] bg-outline-variant mb-10"></div>
+<ul class="text-left w-full space-y-4 mb-12 font-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Weekly Reconciliation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Accounts Payable/Receivable</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Cash Flow Management</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Priority Email Support</li>
+</ul>
+<button class="w-full bg-primary-container text-on-primary-container font-label-caps text-label-caps py-4 hover:scale-[1.03] transition-all duration-300 shadow-lg">
+                        Get a Personalized Quote
+                    </button>
+</div>
+<!-- Pro Package -->
+<div class="reveal-animation bg-white p-12 flex flex-col items-center text-center premium-shadow premium-shadow-hover transition-all duration-500 rounded" style="transition-delay: 400ms;">
+<div class="w-16 h-16 bg-surface-container mb-8 flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-primary text-3xl">corporate_fare</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 text-on-surface">Pro</h3>
+<p class="font-body-md text-body-md text-tertiary mb-10 flex-grow">
+                        Full-spectrum financial management for high-volume enterprises requiring granular oversight and strategic insights.
+                    </p>
+<div class="w-full h-[1px] bg-outline-variant mb-10"></div>
+<ul class="text-left w-full space-y-4 mb-12 font-body-md text-on-surface">
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Daily Transaction Entry</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Custom Management Reports</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> Multi-entity Consolidation</li>
+<li class="flex items-start gap-3"><span class="material-symbols-outlined text-primary text-sm mt-1">check</span> 24/7 Priority Concierge</li>
+</ul>
+<button class="w-full border border-primary-container text-primary font-label-caps text-label-caps py-4 hover:bg-primary-container hover:text-white transition-all duration-300">
+                        Get a Personalized Quote
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-gap bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 mb-12 md:mb-0">
+<span class="font-label-caps text-label-caps text-primary tracking-[0.2em] block mb-4">CLARITY</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-tertiary">
+                        Find answers to common inquiries regarding our tiered pricing and service delivery model.
+                    </p>
+</div>
+<div class="md:col-span-7 space-y-4">
+<!-- FAQ 1 -->
+<div class="accordion-item bg-white premium-shadow transition-all duration-300">
+<button class="accordion-trigger w-full flex justify-between items-center p-8 text-left group">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">How is my volume calculated?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform duration-300 text-primary">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-8 pb-8 font-body-md text-tertiary">
+                                We analyze the average number of monthly transactions across all linked financial accounts. This includes bank statements, credit cards, and digital payment processors. Our team conducts a complimentary initial audit to determine your exact volume tier.
+                            </div>
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="accordion-item bg-white premium-shadow transition-all duration-300">
+<button class="accordion-trigger w-full flex justify-between items-center p-8 text-left group">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Can I change plans mid-year?</span>
+<span class="material-symbols-outlined accordion-icon transition-transform duration-300 text-primary">expand_more</span>
+</button>
+<div class="accordion-content">
+<div class="px-8 pb-8 font-body-md text-tertiary">
+                                Absolutely. We believe in agility. If your business experiences significant growth or seasonal shifts, your plan can be adjusted with 30 days' notice. We review your transaction volume quarterly to ensure you are always in the most efficient tier.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-inverse-surface dark:bg-on-background w-full py-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md text-primary-fixed mb-6">AARC</div>
+<p class="text-surface-variant font-body-md text-body-md mb-8">
+                    Meticulous bookkeeping for the modern enterprise. Elevating your financial clarity through precision and insight.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-white mb-6 tracking-widest">COMPANY</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">About Us</a></li>
+<li><a class="text-surface-variant font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Careers</a></li>
+<li><a class="text-surface-variant font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-white mb-6 tracking-widest">LEGAL</h4>
+<ul class="space-y-4">
+<li><a class="text-surface-variant font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-surface-variant font-body-md text-body-md hover:text-primary-fixed-dim transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-white mb-6 tracking-widest">NEWSLETTER</h4>
+<div class="relative">
+<input class="w-full bg-surface-container-low/10 border-b border-surface-variant p-3 text-white focus:outline-none focus:border-primary-fixed transition-colors" placeholder="Email Address" type="email"/>
+<button class="absolute right-0 bottom-3 text-primary-fixed">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-16 pt-8 border-t border-white/10">
+<p class="text-surface-variant font-body-md text-body-md text-center md:text-left">
+                © 2024 AARC Smart Bookkeeping. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Scroll behavior for Nav
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('top-nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-on-background', 'shadow-xl', 'backdrop-blur-md');
+                nav.classList.remove('bg-transparent');
+                nav.style.paddingTop = '12px';
+                nav.style.paddingBottom = '12px';
+            } else {
+                nav.classList.remove('bg-on-background', 'shadow-xl', 'backdrop-blur-md');
+                nav.classList.add('bg-transparent');
+                nav.style.paddingTop = '24px';
+                nav.style.paddingBottom = '24px';
+            }
+        });
+
+        // Intersection Observer for Reveal Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-animation').forEach(el => observer.observe(el));
+
+        // Accordion Logic
+        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const item = trigger.closest('.accordion-item');
+                const isActive = item.classList.contains('active');
+                
+                // Close all
+                document.querySelectorAll('.accordion-item').forEach(i => i.classList.remove('active'));
+                
+                // Open clicked
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body></html>

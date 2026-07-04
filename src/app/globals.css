@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #7a5904;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #cfa550;
+  --color-on-primary-container: #543b00;
+  --color-secondary: #186964;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #a6f0e9;
+  --color-on-secondary-container: #216f6a;
+  --color-tertiary: #5f5e5e;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #adabaa;
+  --color-on-tertiary-container: #403f3f;
+  --color-background: #fbf9f8;
+  --color-on-background: #1b1c1c;
+  --color-surface: #fbf9f8;
+  --color-on-surface: #1b1c1c;
+  --color-surface-variant: #e4e2e2;
+  --color-on-surface-variant: #4e4637;
+  --color-surface-dim: #dbdad9;
+  --color-surface-bright: #fbf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f3;
+  --color-surface-container: #efeded;
+  --color-surface-container-high: #eae8e7;
+  --color-surface-container-highest: #e4e2e2;
+  --color-outline: #807666;
+  --color-outline-variant: #d2c5b2;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  
+  --spacing-container-max: 1280px;
+  --spacing-margin-desktop: 64px;
+  --spacing-margin-mobile: 20px;
+  --spacing-gutter: 32px;
+  --spacing-section-gap: 120px;
+  --spacing-unit: 8px;
+
+  --font-serif: var(--font-playfair), Playfair Display, Georgia, serif;
+  --font-sans: var(--font-montserrat), Montserrat, sans-serif;
+}
+
+:root {
+  --background: #fbf9f8;
+  --foreground: #1b1c1c;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: inherit;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+/* Custom premium hover states & styles */
+.gold-link-underline {
+  position: relative;
+}
+
+.gold-link-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #CFA550;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-link-underline:hover::after {
+  width: 100%;
+}
+
+/* Premium Card hover lifts and soft shadows */
+.premium-card {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(13, 13, 13, 0.03);
+  box-shadow: 0 10px 30px rgba(13, 13, 13, 0.04);
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(13, 13, 13, 0.08);
+}
+
+/* Custom scroll bar for premium styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CFA550;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b58d3e;
+}
