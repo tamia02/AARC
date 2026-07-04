@@ -24,6 +24,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+    userScalable: true,
+    viewportFit: "cover",
+  },
+  themeColor: "#1b1c1c",
   openGraph: {
     title: "AARC Smart Bookkeeping | Cypress & Tomball, TX",
     description: "Professional monthly bookkeeping, catch-up cleanup, payroll, and QuickBooks setup for small businesses.",

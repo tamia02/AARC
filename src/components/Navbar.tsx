@@ -42,14 +42,14 @@ export default function Navbar() {
     >
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-4 select-none cursor-pointer">
+        <Link href="/" className="flex items-center gap-3 select-none cursor-pointer">
           <img
             alt="AARC Logo"
-            className="h-12 w-auto object-contain"
+            className="h-10 w-auto object-contain flex-shrink-0"
             src="/logo-transparent.png"
           />
-          <span className="font-serif text-headline-sm tracking-tighter text-primary font-bold">
-            AARC
+          <span className="font-serif leading-tight text-primary font-bold text-[14px] md:text-[16px]">
+            AARC Smart<br className="hidden sm:block" /> <span className="sm:inline">Bookkeeping</span>
           </span>
         </Link>
 
@@ -83,7 +83,7 @@ export default function Navbar() {
         {/* Mobile Menu Trigger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`md:hidden flex items-center select-none ${
+          className={`md:hidden flex items-center justify-center w-11 h-11 rounded-full select-none touch-manipulation ${
             isScrolled ? "text-white" : "text-primary"
           }`}
           aria-label="Toggle menu"
@@ -108,11 +108,11 @@ export default function Navbar() {
           >
             <img
               alt="AARC Logo"
-              className="h-10 w-auto object-contain"
+              className="h-10 w-auto object-contain flex-shrink-0"
               src="/logo-transparent.png"
             />
-            <span className="font-serif text-headline-sm tracking-tighter text-primary font-bold">
-              AARC
+            <span className="font-serif leading-tight text-primary font-bold text-[15px]">
+              AARC Smart<br />Bookkeeping
             </span>
           </Link>
           <button
@@ -131,7 +131,7 @@ export default function Navbar() {
                 key={link.name}
                 href={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`font-sans text-label-caps uppercase tracking-widest text-[14px] font-bold py-2 border-b border-white/10 transition duration-300 ${
+                className={`font-sans text-label-caps uppercase tracking-widest text-[14px] font-bold py-4 border-b border-white/10 transition duration-300 touch-manipulation ${
                   isActive ? "text-primary pl-2" : "text-white hover:text-primary"
                 }`}
               >
