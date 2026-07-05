@@ -22,8 +22,8 @@ export default function Footer() {
               src="/logo-transparent.png"
             />
           </Link>
-          <p className="font-sans text-sm text-[#e4e2e2]/80 leading-relaxed">
-            Providing meticulous financial oversight for Northwest Houston's most ambitious entrepreneurs.
+          <p className="font-sans text-sm text-[#e4e2e2]/80 leading-relaxed italic">
+            Empowering your business with $mart books.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Footer() {
           <h4 className="font-sans text-[#ffdea4] mb-6 uppercase tracking-widest text-[12px] font-bold">
             Contact
           </h4>
-          <p className="text-sm mb-4 font-sans">Inquiry@AARCSmartBooks.com</p>
+          <p className="text-sm mb-4 font-sans">aarcsmartbookkeeping@gmail.com</p>
           <div className="flex gap-4">
             <span className="material-symbols-outlined cursor-pointer hover:text-primary transition-colors text-[24px] select-none">
               hub

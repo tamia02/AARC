@@ -15,6 +15,11 @@ export default function Home() {
         <div className="flex-1 flex items-center py-16 md:py-24">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 w-full">
             <div className="lg:col-span-8">
+              <ScrollReveal direction="up" delay={0.05}>
+                <span className="font-sans text-[11px] font-bold text-primary tracking-[0.2em] mb-4 block uppercase">
+                  Empowering Your Business with $mart Books
+                </span>
+              </ScrollReveal>
               <ScrollReveal direction="up" delay={0.1}>
                 <h1 className="font-serif text-[40px] md:text-[56px] text-on-background mb-6 leading-tight font-bold">
                   Bookkeeping That Gives You <span className="italic text-primary">Clarity</span>, Not Confusion.

@@ -112,7 +112,7 @@ export default function TermsOfService() {
                   </p>
                   <div className="font-sans font-bold text-on-surface leading-relaxed">
                     AARC $mart Bookkeeping<br />
-                    Email: <a href="mailto:raksha@aarcsmartbookkeeping.com" className="text-primary hover:underline">raksha@aarcsmartbookkeeping.com</a>
+                    Email: <a href="mailto:aarcsmartbookkeeping@gmail.com" className="text-primary hover:underline">aarcsmartbookkeeping@gmail.com</a>
                   </div>
                 </div>
               </div>

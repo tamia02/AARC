@@ -55,7 +55,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-1 font-bold">PHONE</p>
-                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors" href="tel:+18325550199">(832) 555-0199</a>
+                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors" href="tel:+18324680154">832.468.0154</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 group">
@@ -64,7 +64,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-1 font-bold">EMAIL</p>
-                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors break-all" href="mailto:raksha@aarcsmartbookkeeping.com">raksha@aarcsmartbookkeeping.com</a>
+                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors break-all" href="mailto:aarcsmartbookkeeping@gmail.com">aarcsmartbookkeeping@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4 group">
@@ -73,7 +73,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-1 font-bold">LINKEDIN</p>
-                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors" href="https://linkedin.com/in/raksha-shetty" target="_blank" rel="noopener noreferrer">/in/raksha-shetty</a>
+                      <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors" href="https://linkedin.com/in/raksha-shetty12" target="_blank" rel="noopener noreferrer">/in/raksha-shetty12</a>
                     </div>
                   </div>
                 </div>
