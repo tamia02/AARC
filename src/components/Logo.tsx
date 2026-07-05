@@ -56,7 +56,7 @@ export default function Logo({ className = "", lightBackground = false }: LogoPr
       <div className="flex items-center justify-center space-x-2 mt-1 w-full max-w-[240px]">
         <div className={`h-[1px] w-6 ${lineColor}`} />
         <span className="text-[9px] tracking-[0.25em] text-[#CFA550] uppercase font-sans font-bold whitespace-nowrap">
-          Smart Bookkeeping
+          $mart Bookkeeping
         </span>
         <div className={`h-[1px] w-6 ${lineColor}`} />
       </div>

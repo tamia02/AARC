@@ -52,10 +52,13 @@ export default function Footer() {
             Service Areas
           </h4>
           <ul className="space-y-4 font-sans text-sm">
-            <li>Cypress, TX</li>
-            <li>Tomball, TX</li>
+            <li>Cypress, TX (Local)</li>
+            <li>Tomball, TX (Local)</li>
             <li>The Woodlands, TX</li>
-            <li>Northwest Houston</li>
+            <li className="text-[#ffdea4]/90 font-medium leading-relaxed">
+              Serving Nationwide<br />
+              <span className="text-[11px] opacity-75 font-normal">(incl. California, Texas)</span>
+            </li>
           </ul>
         </div>
 
@@ -78,8 +81,13 @@ export default function Footer() {
 
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center space-y-3">
         <p className="font-sans text-xs opacity-60">
-          © {new Date().getFullYear()} AARC Smart Bookkeeping. All rights reserved.
+          © {new Date().getFullYear()} AARC $mart Bookkeeping. All rights reserved.
         </p>
+        <div className="flex justify-center space-x-6 text-xs opacity-65 font-sans py-1">
+          <Link href="/privacy" className="hover:text-[#cfa550] transition-colors">Privacy Policy</Link>
+          <span className="opacity-40">|</span>
+          <Link href="/terms" className="hover:text-[#cfa550] transition-colors">Terms of Service</Link>
+        </div>
         <p className="font-sans text-xs opacity-40">
           Made with ♥ by{" "}
           <a

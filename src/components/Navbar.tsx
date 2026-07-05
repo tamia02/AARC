@@ -59,7 +59,7 @@ export default function Navbar() {
               src="/logo-transparent.png"
             />
             <span className="font-serif leading-tight text-primary font-bold text-[13px] md:text-[15px] whitespace-nowrap">
-              AARC Smart Bookkeeping
+              AARC $mart Bookkeeping
             </span>
           </Link>
 
@@ -132,7 +132,7 @@ export default function Navbar() {
               src="/logo-transparent.png"
             />
             <span className="font-serif leading-tight text-primary font-bold text-[15px]">
-              AARC Smart Bookkeeping
+              AARC $mart Bookkeeping
             </span>
           </Link>
           {/* Close button */}

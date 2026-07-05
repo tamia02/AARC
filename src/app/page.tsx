@@ -22,7 +22,7 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2}>
                 <p className="font-sans text-[18px] text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
-                  Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, and across Northwest Houston.
+                  Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, Northwest Houston—and remote clients nationwide.
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.3}>
@@ -54,7 +54,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">domain</span> DIVERSE INDUSTRY EXPERIENCE
             </span>
             <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">location_on</span> PROUDLY SERVING CYPRESS &amp; TOMBALL, TX
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">location_on</span> CYPRESS &amp; TOMBALL, TX &amp; NATIONWIDE
             </span>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Home() {
           <div className="text-center max-w-2xl mx-auto mb-20">
             <ScrollReveal direction="up">
               <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">Specialized Financial Services</h2>
-              <p className="text-on-surface-variant text-base">Precise financial management tailored to the unique needs of Texas businesses.</p>
+              <p className="text-on-surface-variant text-base">Precise financial management tailored to the unique needs of businesses in Texas and nationwide.</p>
             </ScrollReveal>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -252,9 +252,9 @@ export default function Home() {
                 <div className="inline-block px-4 py-1 bg-primary/10 text-primary font-sans text-[10px] tracking-[0.2em] uppercase mb-6 font-bold">
                   Leadership
                 </div>
-                <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">Meet Your Cypress & Tomball Area Bookkeeper</h2>
+                <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">Meet Your Local Bookkeeper with Nationwide Reach</h2>
                 <p className="font-sans text-[18px] text-on-surface-variant mb-8 leading-relaxed">
-                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and solar energy sectors, among others. I founded AARC Smart Bookkeeping to help local business owners regain their time and confidence through crystal-clear financial management.
+                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and solar energy sectors, among others. I founded AARC $mart Bookkeeping to help business owners regain their time and confidence through crystal-clear financial management.
                 </p>
                 <Link
                   href="/about"
