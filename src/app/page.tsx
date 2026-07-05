@@ -27,7 +27,7 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2}>
                 <p className="font-sans text-[18px] text-on-surface-variant max-w-2xl mb-10 leading-relaxed">
-                  Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies in Cypress, Tomball, Northwest Houston—and remote clients nationwide.
+                  Accurate, timely, and compliant bookkeeping services for small businesses, self-employed professionals, and growing companies nationwide (including Texas, California, and beyond).
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.3}>
