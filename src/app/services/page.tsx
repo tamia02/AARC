@@ -170,44 +170,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Bonus Feature */}
-      <section className="py-section-gap bg-secondary-container/20 relative overflow-hidden">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
-          <ScrollReveal direction="up">
-            <div className="bg-white p-12 md:p-20 rounded-[4px] premium-shadow border-t-8 border-primary flex flex-col md:flex-row gap-12 items-center">
-              <div className="md:w-1/2">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-primary-container flex items-center justify-center rounded-full text-on-primary-container flex-shrink-0">
-                    <span className="material-symbols-outlined text-[24px]">wb_sunny</span>
-                  </div>
-                  <span className="font-sans text-[12px] font-bold text-primary tracking-widest uppercase">
-                    INDUSTRY SPECIALIZATION
-                  </span>
-                </div>
-                <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">
-                  Bookkeeping for Solar & Energy Companies
-                </h2>
-                <p className="text-on-surface-variant font-sans text-base leading-relaxed mb-8">
-                  The energy sector requires specific handling of incentives, equipment depreciation, and long-term project accounting. We bring specialized expertise to ensure your renewable energy business remains as efficient financially as it is operationally.
-                </p>
-                <CalendlyButton
-                  variant="primary"
-                  text="VIEW SECTOR DETAILS"
-                  className="px-8 py-4 text-[12px] font-bold tracking-widest uppercase"
-                />
-              </div>
-              <div className="md:w-1/2 w-full aspect-video rounded-[4px] overflow-hidden">
-                <img
-                  className="w-full h-full object-cover"
-                  alt="Solar panels farm sunset"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5GKa8EgJD17nFyHhVfCLk5OcKabt1ghVDjwo5weUL-BQxU6Cs65HKG8kQeaQA6WcvPCWBY516WbY9asHwCZI_x4xKBiPAAhUIOvoz86LZ2e3J96GphyImQzShi3gVaFmYUdKglrGnkNJCoj31D7qB0zApmxcJ6SXy7-tYY5atid0Sf9Y3ESQUVtfT4l_ibbQD9XCZFti76I6Y_3IPW5UKMZ0VbgbzPzc_G-GQACLONoo1rP2Gx0uxSdDnYxB3YFhAl7g7rEiipnhs"
-                />
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle, #186964 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
-      </section>
+
 
       {/* CTA Section */}
       <section className="py-section-gap bg-surface-container-highest">

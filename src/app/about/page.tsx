@@ -63,7 +63,7 @@ export default function About() {
                   Professional Excellence, <br />Personal Commitment
                 </h2>
                 <p className="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
-                  My career has been defined by navigating high-stakes financial environments—from the rigorous demands of hospital accounting to the dynamic, fast-paced world of solar and renewable energy public firms.
+                  My career has been defined by navigating high-stakes financial environments—from the rigorous demands of hospital accounting and public accounting to solar companies, among others.
                 </p>
                 <p className="font-sans text-sm text-on-surface-variant leading-relaxed">
                   I understand that behind every spreadsheet is a vision. I don't just categorize transactions; I ensure your financial narrative is clear, compliant, and ready for any level of scrutiny.
@@ -93,7 +93,7 @@ export default function About() {
                   <ul className="space-y-3 font-sans text-sm text-on-surface font-semibold">
                     <li className="flex items-center gap-2"><span className="text-primary">•</span> Hospital & Healthcare Systems</li>
                     <li className="flex items-center gap-2"><span className="text-primary">•</span> Public Accounting Firms</li>
-                    <li className="flex items-center gap-2"><span className="text-primary">•</span> Solar & Energy Sectors</li>
+                    <li className="flex items-center gap-2"><span className="text-primary">•</span> Solar & Energy Sectors, among others</li>
                   </ul>
                 </div>
               </ScrollReveal>

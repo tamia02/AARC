@@ -51,7 +51,7 @@ export default function Home() {
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">verified</span> MBA &amp; MSA CREDENTIALED
             </span>
             <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">domain</span> HOSPITAL, PUBLIC &amp; SOLAR EXPERIENCE
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">domain</span> DIVERSE INDUSTRY EXPERIENCE
             </span>
             <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">location_on</span> PROUDLY SERVING CYPRESS &amp; TOMBALL, TX
@@ -254,7 +254,7 @@ export default function Home() {
                 </div>
                 <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">Meet Your Cypress & Tomball Area Bookkeeper</h2>
                 <p className="font-sans text-[18px] text-on-surface-variant mb-8 leading-relaxed">
-                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and the solar energy sector. I founded AARC Smart Bookkeeping to help local business owners regain their time and confidence through crystal-clear financial management.
+                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and solar energy sectors, among others. I founded AARC Smart Bookkeeping to help local business owners regain their time and confidence through crystal-clear financial management.
                 </p>
                 <Link
                   href="/about"
@@ -278,7 +278,6 @@ export default function Home() {
               <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Small Businesses</span>
               <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Startups</span>
               <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Professional Services</span>
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Solar & Energy Tech</span>
               <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Healthcare Practices</span>
               <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Construction & Trades</span>
             </div>
@@ -314,7 +313,7 @@ export default function Home() {
                   <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0" />
                   <div>
                     <p className="font-bold text-sm uppercase text-on-surface">Sarah J.</p>
-                    <p className="text-[10px] text-primary tracking-widest uppercase font-bold">Solar Solutions LLC</p>
+                    <p className="text-[10px] text-primary tracking-widest uppercase font-bold">Bright Design LLC</p>
                   </div>
                 </div>
               </div>
