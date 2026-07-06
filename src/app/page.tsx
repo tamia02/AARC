@@ -294,78 +294,57 @@ export default function Home() {
             </ScrollReveal>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Card 1 */}
-            <ScrollReveal direction="up" delay={0.05} className="h-full">
-              <div className="bg-white p-10 border border-outline-variant/10 rounded-[4px] ambient-shadow flex flex-col justify-between h-full">
-                <div>
-                  <div className="text-[#CFA550] mb-6 flex gap-1 select-none">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant text-sm leading-relaxed mb-8">
-                    "AARC transformed our messy spreadsheet system into a professional dashboard. Tax season was a breeze for the first time in years."
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
-                  <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0" />
+            {[
+              {
+                name: "Corey Drayton",
+                role: "COO / Founder",
+                company: "Drayton Enterprises (Houston)",
+                text: `"Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers."`,
+                image: "/corey-drayton.jpg",
+              },
+              {
+                name: "Carlos Arriola",
+                role: "Owner",
+                company: "ELITE HSE LLC",
+                text: `"I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier. She was always professional, incredibly responsive, and made the entire process simple and stress-free."`,
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
+              },
+              {
+                name: "Cheyann Yates",
+                role: "Business Owner",
+                company: "Client",
+                text: `"You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊"`,
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
+              },
+            ].map((test, index) => (
+              <ScrollReveal direction="up" delay={0.05 * (index + 1)} key={test.name} className="h-full">
+                <div className="bg-white p-10 border border-outline-variant/10 rounded-[4px] ambient-shadow flex flex-col justify-between h-full hover:translate-y-[-4px] transition-transform duration-300">
                   <div>
-                    <p className="font-bold text-sm uppercase text-on-surface">Sarah J.</p>
-                    <p className="text-[10px] text-primary tracking-widest uppercase font-bold">Bright Design LLC</p>
+                    <div className="text-[#CFA550] mb-6 flex gap-1 select-none">
+                      {[...Array(5)].map((_, i) => (
+                        <span key={i} className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                      ))}
+                    </div>
+                    <p className="italic text-on-surface-variant text-sm leading-relaxed mb-8">
+                      {test.text}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
+                    <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0 overflow-hidden relative">
+                      <img
+                        className="w-full h-full object-cover"
+                        alt={test.name}
+                        src={test.image}
+                      />
+                    </div>
+                    <div>
+                      <p className="font-bold text-sm uppercase text-on-surface">{test.name}</p>
+                      <p className="text-[10px] text-primary tracking-widest uppercase font-bold">{test.company}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </ScrollReveal>
-            {/* Card 2 */}
-            <ScrollReveal direction="up" delay={0.1} className="h-full">
-              <div className="bg-white p-10 border border-outline-variant/10 rounded-[4px] ambient-shadow flex flex-col justify-between h-full">
-                <div>
-                  <div className="text-[#CFA550] mb-6 flex gap-1 select-none">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant text-sm leading-relaxed mb-8">
-                    "The expertise from someone with an MBA background really shows. It's not just bookkeeping; it's strategic advice for my firm."
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
-                  <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0" />
-                  <div>
-                    <p className="font-bold text-sm uppercase text-on-surface">David M.</p>
-                    <p className="text-[10px] text-primary tracking-widest uppercase font-bold">Cypress Law Group</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-            {/* Card 3 */}
-            <ScrollReveal direction="up" delay={0.15} className="h-full">
-              <div className="bg-white p-10 border border-outline-variant/10 rounded-[4px] ambient-shadow flex flex-col justify-between h-full">
-                <div>
-                  <div className="text-[#CFA550] mb-6 flex gap-1 select-none">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                  </div>
-                  <p className="italic text-on-surface-variant text-sm leading-relaxed mb-8">
-                    "Fast, reliable, and incredibly organized. I finally feel like I have full control over my business's financial future."
-                  </p>
-                </div>
-                <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
-                  <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0" />
-                  <div>
-                    <p className="font-bold text-sm uppercase text-on-surface">Elena R.</p>
-                    <p className="text-[10px] text-primary tracking-widest uppercase font-bold">Tomball Design Studio</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
+              </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
