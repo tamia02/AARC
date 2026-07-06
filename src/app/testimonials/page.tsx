@@ -6,6 +6,14 @@ import CalendlyButton from "@/components/CalendlyButton";
 export default function Testimonials() {
   const testimonials = [
     {
+      name: "Corey Drayton",
+      role: "COO / Founder, Drayton Enterprises (Houston)",
+      stars: 5,
+      text: `"Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers. I really appreciate her professionalism and would happily recommend her to anyone looking for a reliable bookkeeper."`,
+      image: "/corey-drayton.jpg",
+      featured: true,
+    },
+    {
       name: "Elena Richardson",
       role: "CEO, Richardson & Co. Real Estate",
       stars: 5,
