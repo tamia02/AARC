@@ -51,15 +51,20 @@ export default function Navbar() {
       >
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 select-none cursor-pointer min-w-0 flex-1 mr-2">
+          <Link href="/" className="flex items-center gap-3 select-none cursor-pointer min-w-0 flex-1 mr-2">
             <img
               alt="AARC Logo"
-              className="h-9 w-auto object-contain flex-shrink-0"
+              className="h-12 w-auto object-contain flex-shrink-0"
               src="/logo-transparent.png"
             />
-            <span className="font-serif leading-tight text-primary font-bold text-[13px] md:text-[15px] whitespace-nowrap">
-              AARC Smart Bookkeeping
-            </span>
+            <div className="flex flex-col justify-center mt-1">
+              <span className="font-serif leading-tight text-primary font-bold text-[20px] md:text-[24px] whitespace-nowrap uppercase tracking-widest">
+                AARC
+              </span>
+              <span className="font-sans text-[#CFA550] uppercase font-bold text-[9px] md:text-[11px] tracking-[0.2em] whitespace-nowrap -mt-1">
+                Smart Bookkeeping
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Links */}
@@ -127,12 +132,17 @@ export default function Navbar() {
           >
             <img
               alt="AARC Logo"
-              className="h-10 w-auto object-contain flex-shrink-0"
+              className="h-12 w-auto object-contain flex-shrink-0"
               src="/logo-transparent.png"
             />
-            <span className="font-serif leading-tight text-primary font-bold text-[15px]">
-              AARC Smart Bookkeeping
-            </span>
+            <div className="flex flex-col justify-center mt-1">
+              <span className="font-serif leading-tight text-primary font-bold text-[20px] whitespace-nowrap uppercase tracking-widest">
+                AARC
+              </span>
+              <span className="font-sans text-[#CFA550] uppercase font-bold text-[9px] tracking-[0.2em] whitespace-nowrap -mt-1">
+                Smart Bookkeeping
+              </span>
+            </div>
           </Link>
           {/* Close button */}
           <button

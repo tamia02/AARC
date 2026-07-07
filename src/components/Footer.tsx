@@ -14,12 +14,20 @@ export default function Footer() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and Description */}
         <div className="md:col-span-1">
-          <Link href="/" className="inline-block select-none cursor-pointer">
+          <Link href="/" className="flex items-center gap-3 select-none cursor-pointer mb-6">
             <img
               alt="AARC Logo"
-              className="h-16 w-auto mb-6"
+              className="h-16 w-auto object-contain flex-shrink-0"
               src="/logo-transparent.png"
             />
+            <div className="flex flex-col justify-center mt-1">
+              <span className="font-serif leading-tight text-primary font-bold text-[28px] whitespace-nowrap uppercase tracking-widest">
+                AARC
+              </span>
+              <span className="font-sans text-[#CFA550] uppercase font-bold text-[11px] tracking-[0.2em] whitespace-nowrap -mt-1">
+                Smart Bookkeeping
+              </span>
+            </div>
           </Link>
           <p className="font-sans text-sm text-[#e4e2e2]/80 leading-relaxed italic">
             Empowering your business with Smart books.

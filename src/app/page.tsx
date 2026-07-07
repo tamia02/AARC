@@ -26,18 +26,23 @@ export default function Home() {
                 </p>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.3}>
-                <div className="flex flex-col sm:flex-row flex-wrap gap-4">
-                  <CalendlyButton
-                    variant="primary"
-                    text="Book a Free Consultation"
-                    className="w-full sm:w-auto px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
-                  />
-                  <Link
-                    href="/services"
-                    className="w-full sm:w-auto border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
-                  >
-                    View Our Services
-                  </Link>
+                <div className="flex flex-col gap-4">
+                  <div className="flex flex-col sm:flex-row flex-wrap gap-4">
+                    <CalendlyButton
+                      variant="primary"
+                      text="Book a Free Consultation"
+                      className="w-full sm:w-auto px-10 py-5 text-[12px] tracking-widest uppercase font-bold"
+                    />
+                    <Link
+                      href="/services"
+                      className="w-full sm:w-auto border border-[#CFA550] text-[#CFA550] hover:bg-[#CFA550]/10 hover:scale-105 active:scale-95 transition-all duration-300 px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-center inline-block"
+                    >
+                      View Our Services
+                    </Link>
+                  </div>
+                  <p className="text-primary font-bold tracking-widest uppercase text-[12px] md:text-[14px]">
+                    Our pricing starts from $25 per hour
+                  </p>
                 </div>
               </ScrollReveal>
             </div>
