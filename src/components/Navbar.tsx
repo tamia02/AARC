@@ -32,11 +32,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Pricing", path: "/pricing" },
     { name: "Testimonials", path: "/testimonials" },
-    { name: "Contact", path: "/contact" },
+    { name: "About", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (
@@ -59,7 +58,7 @@ export default function Navbar() {
               src="/logo-transparent.png"
             />
             <span className="font-serif leading-tight text-primary font-bold text-[13px] md:text-[15px] whitespace-nowrap">
-              AARC $mart Bookkeeping
+              AARC Smart Bookkeeping
             </span>
           </Link>
 
@@ -132,7 +131,7 @@ export default function Navbar() {
               src="/logo-transparent.png"
             />
             <span className="font-serif leading-tight text-primary font-bold text-[15px]">
-              AARC $mart Bookkeeping
+              AARC Smart Bookkeeping
             </span>
           </Link>
           {/* Close button */}

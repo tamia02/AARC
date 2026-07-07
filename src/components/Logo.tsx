@@ -18,7 +18,7 @@ export default function Logo({ className = "", lightBackground = false }: LogoPr
       {/* Gold Monogram SVG - Faithfully Reconstructed from the Brand Guidelines */}
       <svg
         viewBox="0 0 100 85"
-        className="w-16 h-14"
+        className="w-24 h-24"
         fill="none"
         stroke="#CFA550"
         strokeWidth="3.2"
@@ -48,17 +48,17 @@ export default function Logo({ className = "", lightBackground = false }: LogoPr
       </svg>
 
       {/* A A R C text with high-contrast elegant serif font styling and letter-spacing */}
-      <span className={`text-2xl font-serif tracking-[0.45em] font-medium uppercase mt-2 pl-[0.45em] ${textColor}`}>
+      <span className={`text-4xl font-serif tracking-[0.45em] font-medium uppercase mt-2 pl-[0.45em] ${textColor}`}>
         AARC
       </span>
 
       {/* Flanked SMART BOOKKEEPING text with gold lines */}
-      <div className="flex items-center justify-center space-x-2 mt-1 w-full max-w-[240px]">
-        <div className={`h-[1px] w-6 ${lineColor}`} />
-        <span className="text-[9px] tracking-[0.25em] text-[#CFA550] uppercase font-sans font-bold whitespace-nowrap">
-          $mart Bookkeeping
+      <div className="flex items-center justify-center space-x-2 mt-2 w-full max-w-[300px]">
+        <div className={`h-[1px] w-8 ${lineColor}`} />
+        <span className="text-[11px] tracking-[0.25em] text-[#CFA550] uppercase font-sans font-bold whitespace-nowrap">
+          Smart Bookkeeping
         </span>
-        <div className={`h-[1px] w-6 ${lineColor}`} />
+        <div className={`h-[1px] w-8 ${lineColor}`} />
       </div>
     </div>
   );

@@ -3,11 +3,10 @@ import Link from "next/link";
 export default function Footer() {
   const quickLinks = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Pricing", path: "/pricing" },
     { name: "Testimonials", path: "/testimonials" },
-    { name: "Contact", path: "/contact" },
+    { name: "About", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
   ];
 
   return (
@@ -23,7 +22,7 @@ export default function Footer() {
             />
           </Link>
           <p className="font-sans text-sm text-[#e4e2e2]/80 leading-relaxed italic">
-            Empowering your business with $mart books.
+            Empowering your business with Smart books.
           </p>
         </div>
 
@@ -81,7 +80,7 @@ export default function Footer() {
 
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-20 pt-8 border-t border-surface-variant/10 text-center space-y-3">
         <p className="font-sans text-xs opacity-60">
-          © {new Date().getFullYear()} AARC $mart Bookkeeping. All rights reserved.
+          © {new Date().getFullYear()} AARC Smart Bookkeeping. All rights reserved.
         </p>
         <div className="flex justify-center space-x-6 text-xs opacity-65 font-sans py-1">
           <Link href="/privacy" className="hover:text-[#cfa550] transition-colors">Privacy Policy</Link>

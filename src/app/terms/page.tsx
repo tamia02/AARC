@@ -30,7 +30,7 @@ export default function TermsOfService() {
             <ScrollReveal direction="up" delay={0.1}>
               <div className="prose prose-stone max-w-none space-y-10 font-sans text-base leading-relaxed text-on-surface-variant">
                 <p>
-                  Welcome to AARC $mart Bookkeeping. By accessing our website or engaging us for professional bookkeeping services, you agree to comply with and be bound by the following Terms of Service. Please read them carefully.
+                  Welcome to AARC Smart Bookkeeping. By accessing our website or engaging us for professional bookkeeping services, you agree to comply with and be bound by the following Terms of Service. Please read them carefully.
                 </p>
 
                 <div className="space-y-4">
@@ -38,10 +38,10 @@ export default function TermsOfService() {
                     1. Scope of Services
                   </h2>
                   <p>
-                    AARC $mart Bookkeeping provides monthly bookkeeping, catch-up and clean-up, payroll management support, and QuickBooks Online optimization.
+                    AARC Smart Bookkeeping provides monthly bookkeeping, catch-up and clean-up, payroll management support, and QuickBooks Online optimization.
                   </p>
                   <p>
-                    <strong>Non-CPA / Tax Preparation Disclaimer:</strong> AARC $mart Bookkeeping provides general ledger management and financial document collection. Unless explicitly contracted under a separate engagement, our services do not constitute certified audits, certified public accounting (CPA) evaluations, or formal legal advice. While we assist in preparing clean books for tax filing, final tax filings and tax strategies are the responsibility of the client's CPA or tax preparer.
+                    <strong>Non-CPA / Tax Preparation Disclaimer:</strong> AARC Smart Bookkeeping provides general ledger management and financial document collection. Unless explicitly contracted under a separate engagement, our services do not constitute certified audits, certified public accounting (CPA) evaluations, or formal legal advice. While we assist in preparing clean books for tax filing, final tax filings and tax strategies are the responsibility of the client's CPA or tax preparer.
                   </p>
                 </div>
 
@@ -58,7 +58,7 @@ export default function TermsOfService() {
                     <li>Reviewing financial statements upon delivery and immediately reporting any discrepancies.</li>
                   </ul>
                   <p>
-                    AARC $mart Bookkeeping relies on the truth and completeness of the records provided by you and will not verify or audit client records for fraud or external accuracy.
+                    AARC Smart Bookkeeping relies on the truth and completeness of the records provided by you and will not verify or audit client records for fraud or external accuracy.
                   </p>
                 </div>
 
@@ -81,7 +81,7 @@ export default function TermsOfService() {
                     4. Strict Confidentiality
                   </h2>
                   <p>
-                    We recognize that your financial records are highly sensitive. AARC $mart Bookkeeping maintains strict confidentiality regarding all information, accounts, books, and business operations provided. We will never share your business data with any third party without your explicit consent, except as required by law.
+                    We recognize that your financial records are highly sensitive. AARC Smart Bookkeeping maintains strict confidentiality regarding all information, accounts, books, and business operations provided. We will never share your business data with any third party without your explicit consent, except as required by law.
                   </p>
                 </div>
 
@@ -90,7 +90,7 @@ export default function TermsOfService() {
                     5. Limitation of Liability
                   </h2>
                   <p>
-                    AARC $mart Bookkeeping will perform services in a diligent and professional manner. However, in no event shall AARC $mart Bookkeeping be liable for any indirect, special, incidental, or consequential damages (including, but not limited to, lost profits, tax penalties, or business disruption) arising out of inaccurate data provided by the client, bank feed integration failures, or tax preparation decisions. Our maximum liability under any circumstances is limited to the fees paid for the specific services in question.
+                    AARC Smart Bookkeeping will perform services in a diligent and professional manner. However, in no event shall AARC Smart Bookkeeping be liable for any indirect, special, incidental, or consequential damages (including, but not limited to, lost profits, tax penalties, or business disruption) arising out of inaccurate data provided by the client, bank feed integration failures, or tax preparation decisions. Our maximum liability under any circumstances is limited to the fees paid for the specific services in question.
                   </p>
                 </div>
 
@@ -99,7 +99,7 @@ export default function TermsOfService() {
                     6. Governing Law & Jurisdiction
                   </h2>
                   <p>
-                    These terms and the relationships between AARC $mart Bookkeeping and its clients will be governed by and construed in accordance with the laws of the State of Texas, without giving effect to conflict of law principles. Any dispute arising under these terms shall be subject to the exclusive jurisdiction of the state and federal courts located in Harris County, Texas.
+                    These terms and the relationships between AARC Smart Bookkeeping and its clients will be governed by and construed in accordance with the laws of the State of Texas, without giving effect to conflict of law principles. Any dispute arising under these terms shall be subject to the exclusive jurisdiction of the state and federal courts located in Harris County, Texas.
                   </p>
                 </div>
 
@@ -111,7 +111,7 @@ export default function TermsOfService() {
                     If you have questions about these Terms of Service, please reach out to us at:
                   </p>
                   <div className="font-sans font-bold text-on-surface leading-relaxed">
-                    AARC $mart Bookkeeping<br />
+                    AARC Smart Bookkeeping<br />
                     Email: <a href="mailto:aarcsmartbookkeeping@gmail.com" className="text-primary hover:underline">aarcsmartbookkeeping@gmail.com</a>
                   </div>
                 </div>

@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
             <ScrollReveal direction="up" delay={0.1}>
               <div className="prose prose-stone max-w-none space-y-10 font-sans text-base leading-relaxed text-on-surface-variant">
                 <p>
-                  At AARC $mart Bookkeeping, we hold your business's financial privacy to the absolute highest standard of care. This Privacy Policy describes how we collect, use, protect, and handle your personal and financial information when you access our website or engage our bookkeeping and financial consulting services.
+                  At AARC Smart Bookkeeping, we hold your business's financial privacy to the absolute highest standard of care. This Privacy Policy describes how we collect, use, protect, and handle your personal and financial information when you access our website or engage our bookkeeping and financial consulting services.
                 </p>
 
                 <div className="space-y-4">
@@ -118,7 +118,7 @@ export default function PrivacyPolicy() {
                     If you have questions, concerns, or requests regarding this Privacy Policy, please contact us at:
                   </p>
                   <div className="font-sans font-bold text-on-surface leading-relaxed">
-                    AARC $mart Bookkeeping<br />
+                    AARC Smart Bookkeeping<br />
                     Email: <a href="mailto:aarcsmartbookkeeping@gmail.com" className="text-primary hover:underline">aarcsmartbookkeeping@gmail.com</a>
                   </div>
                 </div>

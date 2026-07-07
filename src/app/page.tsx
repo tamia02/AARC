@@ -17,7 +17,7 @@ export default function Home() {
             <div className="lg:col-span-8">
               <ScrollReveal direction="up" delay={0.1}>
                 <h1 className="font-serif text-[40px] md:text-[56px] text-on-background mb-6 leading-tight font-bold">
-                  Empowering Your Business with <span className="italic text-primary">$mart Books</span>.
+                  Empowering Your Business with <span className="italic text-primary">Smart Books</span>.
                 </h1>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2}>
@@ -59,64 +59,6 @@ export default function Home() {
           </div>
         </div>
       </header>
-
-
-      {/* Pain Points Section */}
-      <section className="py-section-gap bg-surface">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <div>
-            <ScrollReveal direction="right">
-              <div className="inline-block px-4 py-1 bg-primary/10 text-primary font-sans text-[10px] tracking-[0.2em] uppercase mb-6 font-bold">
-                The Struggle
-              </div>
-              <h2 className="font-serif text-[36px] font-semibold leading-tight text-on-surface mb-8">
-                You Didn't Start Your Business to Manage Spreadsheets
-              </h2>
-              <div className="space-y-6">
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
-                  <div>
-                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Books Falling Behind</h4>
-                    <p className="text-on-surface-variant text-sm">The pile of receipts and unrecorded transactions is growing weekly.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
-                  <div>
-                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Tax Season Dread</h4>
-                    <p className="text-on-surface-variant text-sm">Stress levels peak every April because your financial records aren't ready.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
-                  <div>
-                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">No Cash Flow Visibility</h4>
-                    <p className="text-on-surface-variant text-sm">You don't actually know if you're making money or just moving it around.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4 items-start">
-                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
-                  <div>
-                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Outgrown DIY Bookkeeping</h4>
-                    <p className="text-on-surface-variant text-sm">Your business is scaling, and manual entry is no longer sustainable.</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-          <div>
-            <ScrollReveal direction="left">
-              <div className="relative h-[500px] bg-surface-container rounded-[4px] overflow-hidden ambient-shadow group">
-                <img
-                  className="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700"
-                  alt="Professional office workspace with financial books"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVhrA1wPDiPjP3RnuLdu30G6_HwA8bi08-ysVAeVALnNfBtxuAhhyrbgHhyCwWB8OxCwjNqEqQb6sDwFEIORrWYfc2kCW8ee1oIeJPne5mOyo7plh7V9Yqd0E0FonK2BmsIx9Fsqqvs4vHKbxKAaJJcn0UVWF0wy22rtoH5vhYBpRCxXn55x_E9t93YIxmtm-iS1eQ4aI8_trQRpPW8OsTj3cT5NnsgoIBP2SovesD5-bGvqpgald7bARyXHw-GRfN0H1Ep_m-k7BS"
-                />
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
 
       {/* Services Grid */}
       <section className="py-section-gap bg-surface-container-low" id="services">
@@ -166,6 +108,79 @@ export default function Home() {
                 <span className="material-symbols-outlined text-primary text-4xl mb-6 select-none">account_balance</span>
                 <h3 className="font-bold text-on-surface mb-4 h-12 flex items-center text-base uppercase tracking-wider">Tax Prep Support</h3>
                 <p className="text-on-surface-variant text-xs">Comprehensive financial documentation to simplify your tax filing process.</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Who We Serve */}
+      <section className="py-section-gap bg-surface border-y border-outline-variant/20">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+          <h2 className="font-serif text-[24px] mb-12 uppercase tracking-[0.2em] font-semibold">Industries We Empower</h2>
+          <ScrollReveal direction="up">
+            <div className="flex flex-wrap justify-center gap-4">
+              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Small Businesses</span>
+              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Startups</span>
+              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Professional Services</span>
+              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Healthcare Practices</span>
+              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Construction & Trades</span>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* Pain Points Section */}
+      <section className="py-section-gap bg-surface-container-low">
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <div>
+            <ScrollReveal direction="right">
+              <div className="inline-block px-4 py-1 bg-primary/10 text-primary font-sans text-[10px] tracking-[0.2em] uppercase mb-6 font-bold">
+                The Struggle
+              </div>
+              <h2 className="font-serif text-[36px] font-semibold leading-tight text-on-surface mb-8">
+                You Didn't Start Your Business to Manage Spreadsheets
+              </h2>
+              <div className="space-y-6">
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+                  <div>
+                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Books Falling Behind</h4>
+                    <p className="text-on-surface-variant text-sm">The pile of receipts and unrecorded transactions is growing weekly.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+                  <div>
+                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Tax Season Dread</h4>
+                    <p className="text-on-surface-variant text-sm">Stress levels peak every April because your financial records aren't ready.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+                  <div>
+                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">No Cash Flow Visibility</h4>
+                    <p className="text-on-surface-variant text-sm">You don't actually know if you're making money or just moving it around.</p>
+                  </div>
+                </div>
+                <div className="flex gap-4 items-start">
+                  <span className="material-symbols-outlined text-primary mt-1 text-[20px]">check_circle</span>
+                  <div>
+                    <h4 className="font-bold text-on-surface mb-1 uppercase text-xs tracking-wider">Outgrown DIY Bookkeeping</h4>
+                    <p className="text-on-surface-variant text-sm">Your business is scaling, and manual entry is no longer sustainable.</p>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+          <div>
+            <ScrollReveal direction="left">
+              <div className="relative h-[500px] bg-surface-container rounded-[4px] overflow-hidden ambient-shadow group">
+                <img
+                  className="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700"
+                  alt="Professional office workspace with financial books"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVhrA1wPDiPjP3RnuLdu30G6_HwA8bi08-ysVAeVALnNfBtxuAhhyrbgHhyCwWB8OxCwjNqEqQb6sDwFEIORrWYfc2kCW8ee1oIeJPne5mOyo7plh7V9Yqd0E0FonK2BmsIx9Fsqqvs4vHKbxKAaJJcn0UVWF0wy22rtoH5vhYBpRCxXn55x_E9t93YIxmtm-iS1eQ4aI8_trQRpPW8OsTj3cT5NnsgoIBP2SovesD5-bGvqpgald7bARyXHw-GRfN0H1Ep_m-k7BS"
+                />
               </div>
             </ScrollReveal>
           </div>
@@ -242,6 +257,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       priority
+                      quality={100}
                     />
                   </div>
                 </div>
@@ -254,7 +270,7 @@ export default function Home() {
                 </div>
                 <h2 className="font-serif text-[36px] font-semibold leading-tight mb-6">Meet Your Local Bookkeeper with Nationwide Reach</h2>
                 <p className="font-sans text-[18px] text-on-surface-variant mb-8 leading-relaxed">
-                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and solar energy sectors, among others. I founded AARC $mart Bookkeeping to help business owners regain their time and confidence through crystal-clear financial management.
+                  With an MBA and MSA credential, I bring rigorous analytical precision and years of experience across hospital systems, public accounting, and solar energy sectors, among others. I founded AARC Smart Bookkeeping to help business owners regain their time and confidence through crystal-clear financial management.
                 </p>
                 <Link
                   href="/about"
@@ -269,24 +285,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Who We Serve */}
-      <section className="py-section-gap bg-surface-container-low border-y border-outline-variant/20">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
-          <h2 className="font-serif text-[24px] mb-12 uppercase tracking-[0.2em] font-semibold">Industries We Empower</h2>
-          <ScrollReveal direction="up">
-            <div className="flex flex-wrap justify-center gap-4">
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Small Businesses</span>
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Startups</span>
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Professional Services</span>
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Healthcare Practices</span>
-              <span className="px-8 py-3 bg-white border border-outline-variant text-on-surface font-sans text-xs tracking-widest rounded-full uppercase hover:bg-primary hover:text-white transition-colors duration-300 cursor-default font-bold">Construction & Trades</span>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
-
       {/* Testimonials */}
-      <section className="py-section-gap bg-surface" id="testimonials">
+      <section className="py-section-gap bg-surface-container-low" id="testimonials">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
           <div className="text-center mb-16">
             <ScrollReveal direction="up">
@@ -307,14 +307,14 @@ export default function Home() {
                 role: "Owner",
                 company: "ELITE HSE LLC",
                 text: `"I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier. She was always professional, incredibly responsive, and made the entire process simple and stress-free."`,
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=100&w=400&h=400",
               },
               {
                 name: "Cheyann Yates",
                 role: "Business Owner",
                 company: "Client",
                 text: `"You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊"`,
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
+                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=100&w=400&h=400",
               },
             ].map((test, index) => (
               <ScrollReveal direction="up" delay={0.05 * (index + 1)} key={test.name} className="h-full">
@@ -357,8 +357,11 @@ export default function Home() {
             <div className="relative z-10">
               <ScrollReveal direction="up">
                 <h2 className="font-serif text-[36px] font-semibold leading-tight text-white mb-8">Ready for Books You Can Actually Trust?</h2>
-                <p className="text-surface-bright/70 mb-12 max-w-xl mx-auto font-sans text-[18px]">
+                <p className="text-surface-bright/70 mb-4 max-w-xl mx-auto font-sans text-[18px]">
                   Schedule your free 30-minute consultation today and start your journey toward financial clarity.
+                </p>
+                <p className="text-primary font-bold tracking-widest uppercase mb-8 max-w-xl mx-auto font-sans text-[16px]">
+                  Our pricing starts from $25 per hour
                 </p>
                 <CalendlyButton
                   variant="primary"
