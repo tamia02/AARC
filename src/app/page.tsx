@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ScrollReveal from "@/components/ScrollReveal";
 import CalendlyButton from "@/components/CalendlyButton";
+import ExpandableText from "@/components/ExpandableText";
 
 export default function Home() {
   return (
@@ -304,21 +305,21 @@ export default function Home() {
                 name: "Corey Drayton",
                 role: "COO / Founder",
                 company: "Drayton Enterprises (Houston)",
-                text: `"Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers."`,
+                text: `Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers. I really appreciate her professionalism and would happily recommend her to anyone looking for a reliable bookkeeper.`,
                 image: "/corey-drayton.jpg",
               },
               {
                 name: "Carlos Arriola",
                 role: "Owner",
                 company: "ELITE HSE LLC",
-                text: `"I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier. She was always professional, incredibly responsive, and made the entire process simple and stress-free."`,
+                text: `I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier with the service she provided. She was always professional, incredibly responsive, and made the entire bookkeeping process simple and stress-free. Anytime I had a question, she took the time to explain everything clearly and made sure all of my financial records were handled accurately and on time. What impressed me most was her reliability and willingness to go above and beyond to help. I've already recommended Raksha to several colleagues and friends, and I wouldn't hesitate to recommend her to anyone looking for trustworthy, knowledgeable bookkeeping services. If you want someone who genuinely cares about her clients and makes your life easier, Raksha is an outstanding choice.`,
                 image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=100&w=400&h=400",
               },
               {
                 name: "Cheyann Yates",
                 role: "Business Owner",
                 company: "Client",
-                text: `"You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊"`,
+                text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
                 image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=100&w=400&h=400",
               },
             ].map((test, index) => (
@@ -331,7 +332,7 @@ export default function Home() {
                       ))}
                     </div>
                     <p className="italic text-on-surface-variant text-sm leading-relaxed mb-8">
-                      {test.text}
+                      &quot;<ExpandableText text={test.text} maxLength={150} />&quot;
                     </p>
                   </div>
                   <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
