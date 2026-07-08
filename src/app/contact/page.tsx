@@ -14,7 +14,7 @@ export default function Contact() {
               <h1 className="font-serif text-[40px] md:text-[56px] mb-6 text-on-background font-bold leading-tight">
                 Let's Get Your Books in Order
               </h1>
-              <p className="font-sans text-[18px] text-surface-variant leading-relaxed max-w-2xl mx-auto">
+              <p className="font-sans text-[18px] text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
                 Take the first step towards financial clarity. Schedule a complimentary consultation to discuss how our meticulous bookkeeping can support your growth.
               </p>
             </ScrollReveal>
@@ -30,7 +30,7 @@ export default function Contact() {
                 <div className="p-8 border-b border-surface-container flex items-center justify-between">
                   <div>
                     <h2 className="font-serif text-[24px] font-semibold text-on-surface">Book a Strategy Call</h2>
-                    <p className="text-surface-variant font-sans text-sm mt-1">Select a time that works for you.</p>
+                    <p className="text-on-surface-variant font-sans text-sm mt-1">Select a time that works for you.</p>
                   </div>
                   <span className="material-symbols-outlined text-primary text-4xl select-none">calendar_month</span>
                 </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                       <span className="material-symbols-outlined text-primary group-hover:text-on-primary-container select-none">call</span>
                     </div>
                     <div className="w-full">
-                      <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-2 font-bold">REACH OUT NOW</p>
+                      <p className="font-sans text-[10px] text-on-surface-variant tracking-widest mb-2 font-bold">REACH OUT NOW</p>
                       <a 
                         className="inline-flex items-center justify-center w-full gap-2 bg-primary text-on-primary px-6 py-4 font-sans text-label-caps uppercase tracking-widest text-[13px] font-bold rounded shadow-lg hover:bg-primary/90 hover:scale-[1.02] active:scale-[0.98] transition-all" 
                         href="tel:+18324680154"
@@ -69,7 +69,7 @@ export default function Contact() {
                       <span className="material-symbols-outlined text-primary group-hover:text-on-primary-container select-none">mail</span>
                     </div>
                     <div>
-                      <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-1 font-bold">EMAIL</p>
+                      <p className="font-sans text-[10px] text-on-surface-variant tracking-widest mb-1 font-bold">EMAIL</p>
                       <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors break-all" href="mailto:aarcsmartbookkeeping@gmail.com">aarcsmartbookkeeping@gmail.com</a>
                     </div>
                   </div>
@@ -78,13 +78,13 @@ export default function Contact() {
                       <span className="material-symbols-outlined text-primary group-hover:text-on-primary-container select-none">link</span>
                     </div>
                     <div>
-                      <p className="font-sans text-[10px] text-surface-variant tracking-widest mb-1 font-bold">LINKEDIN</p>
+                      <p className="font-sans text-[10px] text-on-surface-variant tracking-widest mb-1 font-bold">LINKEDIN</p>
                       <a className="font-sans text-base font-bold text-on-background hover:text-primary transition-colors" href="https://linkedin.com/in/raksha-shetty12" target="_blank" rel="noopener noreferrer">/in/raksha-shetty12</a>
                     </div>
                   </div>
                 </div>
                 <div className="mt-auto pt-8 border-t border-surface-container">
-                  <div className="flex items-center gap-3 text-surface-variant">
+                  <div className="flex items-center gap-3 text-on-surface-variant">
                     <span className="material-symbols-outlined text-primary select-none">location_on</span>
                     <p className="font-sans text-xs font-semibold">Serving Cypress & Tomball, Texas — and remote clients nationwide.</p>
                   </div>
