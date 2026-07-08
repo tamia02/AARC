@@ -1,12 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import ScrollReveal from "@/components/ScrollReveal";
 import CalendlyWidget from "@/components/CalendlyWidget";
 
 export default function Contact() {
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
-
   return (
     <div className="relative overflow-hidden bg-background text-on-surface">
       <main className="pt-32">
@@ -33,39 +30,13 @@ export default function Contact() {
                 <div className="p-8 border-b border-surface-container flex items-center justify-between">
                   <div>
                     <h2 className="font-serif text-[24px] font-semibold text-on-surface">Book a Strategy Call</h2>
-                    <p className="text-surface-variant font-sans text-sm mt-1">
-                      {isFormSubmitted ? "Select a time that works for you." : "Please provide your details before booking."}
-                    </p>
+                    <p className="text-surface-variant font-sans text-sm mt-1">Select a time that works for you.</p>
                   </div>
                   <span className="material-symbols-outlined text-primary text-4xl select-none">calendar_month</span>
                 </div>
-                {/* Form or Calendly */}
-                <div className="p-8 bg-white">
-                  {!isFormSubmitted ? (
-                    <form className="space-y-6" onSubmit={(e) => { e.preventDefault(); setIsFormSubmitted(true); }}>
-                      <div className="grid grid-cols-1 gap-6">
-                        <div className="space-y-2">
-                          <label className="font-sans text-xs font-bold uppercase tracking-widest text-on-surface">Name</label>
-                          <input required type="text" className="w-full p-4 bg-surface-container-lowest border border-surface-container rounded-[4px] focus:outline-none focus:border-primary transition-colors" placeholder="Your Name" />
-                        </div>
-                        <div className="space-y-2">
-                          <label className="font-sans text-xs font-bold uppercase tracking-widest text-on-surface">Email</label>
-                          <input required type="email" className="w-full p-4 bg-surface-container-lowest border border-surface-container rounded-[4px] focus:outline-none focus:border-primary transition-colors" placeholder="your@email.com" />
-                        </div>
-                        <div className="space-y-2">
-                          <label className="font-sans text-xs font-bold uppercase tracking-widest text-on-surface">Phone Number</label>
-                          <input required type="tel" className="w-full p-4 bg-surface-container-lowest border border-surface-container rounded-[4px] focus:outline-none focus:border-primary transition-colors" placeholder="123-456-7890" />
-                        </div>
-                      </div>
-                      <button type="submit" className="bg-primary text-on-primary px-10 py-5 font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold w-full hover:bg-primary/90 transition-colors">
-                        Continue to Booking
-                      </button>
-                    </form>
-                  ) : (
-                    <div className="-mx-4 -my-4">
-                      <CalendlyWidget />
-                    </div>
-                  )}
+                {/* Embed actual Calendly Inline Widget */}
+                <div className="p-4 bg-white">
+                  <CalendlyWidget />
                 </div>
               </div>
             </ScrollReveal>
