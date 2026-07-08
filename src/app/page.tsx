@@ -17,8 +17,8 @@ export default function Home() {
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter relative z-10 w-full">
             <div className="lg:col-span-8">
               <ScrollReveal direction="up" delay={0.1}>
-                <h1 className="font-serif text-[40px] md:text-[56px] text-on-background mb-6 leading-tight font-bold">
-                  Empowering Your Business with <span className="italic text-primary">Smart Books</span>.
+                <h1 className="font-serif text-[40px] md:text-[60px] text-on-background mb-6 leading-tight font-bold">
+                  Empowering Your Business with <br /><span className="italic text-primary">Smart Bookkeeping</span>.
                 </h1>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2}>
@@ -306,21 +306,18 @@ export default function Home() {
                 role: "COO / Founder",
                 company: "Drayton Enterprises (Houston)",
                 text: `Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers. I really appreciate her professionalism and would happily recommend her to anyone looking for a reliable bookkeeper.`,
-                image: "/corey-drayton.jpg",
               },
               {
-                name: "Carlos Arriola",
-                role: "Owner",
-                company: "ELITE HSE LLC",
-                text: `I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier with the service she provided. She was always professional, incredibly responsive, and made the entire bookkeeping process simple and stress-free. Anytime I had a question, she took the time to explain everything clearly and made sure all of my financial records were handled accurately and on time. What impressed me most was her reliability and willingness to go above and beyond to help. I've already recommended Raksha to several colleagues and friends, and I wouldn't hesitate to recommend her to anyone looking for trustworthy, knowledgeable bookkeeping services. If you want someone who genuinely cares about her clients and makes your life easier, Raksha is an outstanding choice.`,
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=100&w=400&h=400",
+                name: "Casey Reynolds",
+                role: "Business Owner",
+                company: "Client",
+                text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
               },
               {
                 name: "Cheyann Yates",
                 role: "Business Owner",
                 company: "Client",
                 text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
-                image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=100&w=400&h=400",
               },
             ].map((test, index) => (
               <ScrollReveal direction="up" delay={0.05 * (index + 1)} key={test.name} className="h-full">
@@ -336,13 +333,6 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
-                    <div className="w-10 h-10 rounded-full bg-surface-container-highest flex-shrink-0 overflow-hidden relative">
-                      <img
-                        className="w-full h-full object-cover"
-                        alt={test.name}
-                        src={test.image}
-                      />
-                    </div>
                     <div>
                       <p className="font-bold text-sm uppercase text-on-surface">{test.name}</p>
                       <p className="text-[10px] text-primary tracking-widest uppercase font-bold">{test.company}</p>

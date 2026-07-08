@@ -61,7 +61,7 @@ export default function Navbar() {
               <span className="font-serif leading-tight text-primary font-bold text-[20px] md:text-[24px] whitespace-nowrap uppercase tracking-widest">
                 AARC
               </span>
-              <span className="font-sans text-[#CFA550] uppercase font-bold text-[9px] md:text-[11px] tracking-[0.2em] whitespace-nowrap -mt-1">
+              <span className="font-sans text-[#CFA550] uppercase font-bold text-[12px] md:text-[14px] tracking-[0.2em] whitespace-nowrap -mt-1">
                 Smart Bookkeeping
               </span>
             </div>
@@ -139,7 +139,7 @@ export default function Navbar() {
               <span className="font-serif leading-tight text-primary font-bold text-[20px] whitespace-nowrap uppercase tracking-widest">
                 AARC
               </span>
-              <span className="font-sans text-[#CFA550] uppercase font-bold text-[9px] tracking-[0.2em] whitespace-nowrap -mt-1">
+              <span className="font-sans text-[#CFA550] uppercase font-bold text-[12px] tracking-[0.2em] whitespace-nowrap -mt-1">
                 Smart Bookkeeping
               </span>
             </div>

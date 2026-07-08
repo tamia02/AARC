@@ -11,15 +11,13 @@ export default function Testimonials() {
       role: "COO / Founder, Drayton Enterprises (Houston)",
       stars: 5,
       text: `Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers. I really appreciate her professionalism and would happily recommend her to anyone looking for a reliable bookkeeper.`,
-      image: "/corey-drayton.jpg",
       featured: true,
     },
     {
-      name: "Carlos Arriola",
-      role: "Owner, ELITE HSE LLC",
+      name: "Casey Reynolds",
+      role: "Business Owner",
       stars: 5,
-      text: `I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier with the service she provided. She was always professional, incredibly responsive, and made the entire bookkeeping process simple and stress-free. Anytime I had a question, she took the time to explain everything clearly and made sure all of my financial records were handled accurately and on time. What impressed me most was her reliability and willingness to go above and beyond to help. I've already recommended Raksha to several colleagues and friends, and I wouldn't hesitate to recommend her to anyone looking for trustworthy, knowledgeable bookkeeping services. If you want someone who genuinely cares about her clients and makes your life easier, Raksha is an outstanding choice.`,
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
+      text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
       featured: true,
     },
     {
@@ -27,7 +25,6 @@ export default function Testimonials() {
       role: "Business Owner",
       stars: 5,
       text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150",
       featured: true,
     },
   ];
@@ -86,13 +83,6 @@ export default function Testimonials() {
                       </p>
                     </div>
                     <div className="flex items-center gap-4 pt-4 border-t border-outline-variant/10">
-                      <div className="w-12 h-12 rounded-full bg-surface-container overflow-hidden relative flex-shrink-0">
-                        <img
-                          className="w-full h-full object-cover"
-                          alt={test.name}
-                          src={test.image}
-                        />
-                      </div>
                       <div>
                         <h4 className="font-sans text-label-caps uppercase tracking-widest text-[12px] font-bold text-on-surface">
                           {test.name}
