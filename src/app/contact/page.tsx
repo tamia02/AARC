@@ -117,12 +117,12 @@ export default function Contact() {
             <div className="bg-surface-container-low rounded-[4px] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-12">
               <div className="md:w-1/2">
                 <h3 className="font-serif text-[24px] font-semibold mb-4">Local Presence, Global Capability</h3>
-                <p className="text-surface-variant font-sans text-sm leading-relaxed">
+                <p className="text-on-surface font-sans text-sm leading-relaxed">
                   While we take pride in serving our local Texas business community, our cloud-based infrastructure allows us to provide meticulous bookkeeping services to businesses in all 50 states.
                 </p>
               </div>
               <div className="md:w-1/3 aspect-video bg-surface-dim rounded-[4px] overflow-hidden relative shadow-inner flex items-center justify-center">
-                <div className="text-center opacity-40">
+                <div className="text-center opacity-75 text-on-surface">
                   <span className="material-symbols-outlined text-4xl mb-2 select-none">map</span>
                   <p className="font-sans text-[10px] tracking-widest font-bold uppercase">Cypress & Tomball, TX</p>
                 </div>
