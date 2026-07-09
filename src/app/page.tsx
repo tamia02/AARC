@@ -299,7 +299,7 @@ export default function Home() {
               <h2 className="font-serif text-[36px] font-semibold leading-tight mb-4">Client Voices</h2>
             </ScrollReveal>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 name: "Corey Drayton",
@@ -308,9 +308,9 @@ export default function Home() {
                 text: `Working with Raksha has been a great experience. She's organized, responsive, and easy to work with. Knowing my bookkeeping is in good hands gives me peace of mind and lets me focus on running my business instead of worrying about the numbers. I really appreciate her professionalism and would happily recommend her to anyone looking for a reliable bookkeeper.`,
               },
               {
-                name: "Casey Reynolds",
+                name: "Selva",
                 role: "Business Owner",
-                company: "Client",
+                company: "California Client",
                 text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
               },
               {
@@ -318,6 +318,12 @@ export default function Home() {
                 role: "Business Owner",
                 company: "Client",
                 text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
+              },
+              {
+                name: "Carlos Arriola",
+                role: "Business Owner",
+                company: "ELITE HSE LLC.",
+                text: `I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier with the service she provided. She was always professional, incredibly responsive, and made the entire bookkeeping process simple and stress-free. Anytime I had a question, she took the time to explain everything clearly and made sure all of my financial records were handled accurately and on time.\n\nWhat impressed me most was her reliability and willingness to go above and beyond to help. I've already recommended Raksha to several colleagues and friends, and I wouldn't hesitate to recommend her to anyone looking for trustworthy, knowledgeable bookkeeping services. If you want someone who genuinely cares about her clients and makes your life easier, Raksha is an outstanding choice.`,
               },
             ].map((test, index) => (
               <ScrollReveal direction="up" delay={0.05 * (index + 1)} key={test.name} className="h-full">

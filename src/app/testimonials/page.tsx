@@ -7,6 +7,13 @@ import ExpandableText from "@/components/ExpandableText";
 export default function Testimonials() {
   const testimonials = [
     {
+      name: "Carlos Arriola",
+      role: "Business Owner, ELITE HSE LLC.",
+      stars: 5,
+      text: `I had the pleasure of working with Raksha for my LLC bookkeeping, and I couldn't have been happier with the service she provided. She was always professional, incredibly responsive, and made the entire bookkeeping process simple and stress-free. Anytime I had a question, she took the time to explain everything clearly and made sure all of my financial records were handled accurately and on time.\n\nWhat impressed me most was her reliability and willingness to go above and beyond to help. I've already recommended Raksha to several colleagues and friends, and I wouldn't hesitate to recommend her to anyone looking for trustworthy, knowledgeable bookkeeping services. If you want someone who genuinely cares about her clients and makes your life easier, Raksha is an outstanding choice.`,
+      featured: true,
+    },
+    {
       name: "Corey Drayton",
       role: "COO / Founder, Drayton Enterprises (Houston)",
       stars: 5,
@@ -14,8 +21,8 @@ export default function Testimonials() {
       featured: true,
     },
     {
-      name: "Casey Reynolds",
-      role: "Business Owner",
+      name: "Selva",
+      role: "California Client",
       stars: 5,
       text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
       featured: true,
@@ -52,7 +59,7 @@ export default function Testimonials() {
       {/* Testimonials Bento-inspired Grid */}
       <main className="py-section-gap">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-8">
             {testimonials.map((test, index) => {
               return (
                 <ScrollReveal
