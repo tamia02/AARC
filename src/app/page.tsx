@@ -54,7 +54,7 @@ export default function Home() {
         <div className="w-full bg-surface-container-low py-5 border-t border-outline-variant/30 relative z-10">
           <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col sm:flex-row flex-wrap justify-center md:justify-between items-center gap-3 md:gap-6 text-on-surface-variant opacity-80">
             <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
-              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">workspace_premium</span> QUICKBOOK EXPERT
+              <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">workspace_premium</span> QUICKBOOKS EXPERT
             </span>
             <span className="font-sans text-[11px] font-bold tracking-widest uppercase flex items-center gap-2">
               <span className="material-symbols-outlined text-[18px] text-primary flex-shrink-0">verified</span> MBA &amp; MSA CREDENTIALED
