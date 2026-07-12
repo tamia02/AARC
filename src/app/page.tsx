@@ -317,9 +317,9 @@ export default function Home() {
                 text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
               },
               {
-                name: "Casey Reynolds - Haven Services",
+                name: "Casey Reynolds",
                 role: "Business Owner",
-                company: "Client",
+                company: "Haven Services",
                 text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
               },
               {

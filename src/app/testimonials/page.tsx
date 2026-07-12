@@ -28,8 +28,8 @@ export default function Testimonials() {
       featured: true,
     },
     {
-      name: "Casey Reynolds - Haven Services",
-      role: "Business Owner",
+      name: "Casey Reynolds",
+      role: "Business Owner, Haven Services",
       stars: 5,
       text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
       featured: true,
