@@ -319,7 +319,7 @@ export default function Home() {
               {
                 name: "Casey Reynolds",
                 role: "Business Owner",
-                company: "Haven Services",
+                company: "Business Owner, Haven Services",
                 text: `You have been so kind and helpful. Very quick to respond with any needs/questions we have. We appreciate all you've done 😊`,
               },
               {
