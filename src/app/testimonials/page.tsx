@@ -21,8 +21,8 @@ export default function Testimonials() {
       featured: true,
     },
     {
-      name: "Selva",
-      role: "California",
+      name: "Selva TG",
+      role: "NTEK, California",
       stars: 5,
       text: `Raksha has been an exceptional bookkeeper for my six companies. Her accuracy, organization, and ability to manage complex, multi-entity financials are truly impressive. She consistently delivers reliable work and keeps everything running smoothly. I highly value her professionalism and dedication.`,
       featured: true,
