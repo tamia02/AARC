@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://aarcsmartbookkeeping.com";
+  const baseUrl = "https://www.aarcbookkeeping.com";
   const routes = ["", "/about", "/services", "/pricing", "/testimonials", "/contact"];
 
   return routes.map((route) => ({

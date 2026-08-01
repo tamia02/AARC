@@ -177,6 +177,26 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Person Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Raksha Shetty",
+            "jobTitle": "Founder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "AARC Smart Bookkeeping",
+              "url": "https://www.aarcbookkeeping.com"
+            },
+            "description": "With an MBA and MSA in Accounting, I bring a unique blend of strategic insight and meticulous precision to your financial landscape.",
+            "url": "https://www.aarcbookkeeping.com/about"
+          }),
+        }}
+      />
     </div>
   );
 }

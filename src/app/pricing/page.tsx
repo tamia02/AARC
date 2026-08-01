@@ -9,6 +9,14 @@ export default function Pricing() {
 
   const faqs = [
     {
+      question: "How much does monthly bookkeeping cost?",
+      answer: "Our pricing starts at $25 per hour and is customized based on your business's average number of monthly transactions across all linked financial accounts. We offer flexible tiers including Starter, Growth, and Pro packages.",
+    },
+    {
+      question: "Do you offer QuickBooks Online (QBO) setup and optimization?",
+      answer: "Yes, we specialize in QuickBooks Online setup, integration, and fine-tuning for maximum efficiency. This ensures your financial foundation is solid from the start.",
+    },
+    {
       question: "How is my volume calculated?",
       answer: "We analyze the average number of monthly transactions across all linked financial accounts. This includes bank statements, credit cards, and digital payment processors. Our team conducts a complimentary initial audit to determine your exact volume tier.",
     },
@@ -16,7 +24,20 @@ export default function Pricing() {
       question: "Can I change plans mid-year?",
       answer: "Absolutely. We believe in agility. If your business experiences significant growth or seasonal shifts, your plan can be adjusted with 30 days' notice. We review your transaction volume quarterly to ensure you are always in the most efficient tier.",
     },
+    {
+      question: "Will you help me prepare for tax season?",
+      answer: "Yes! While we do not file taxes, we provide comprehensive financial documentation and clean, audit-ready books that will simplify the tax filing process for you and your CPA.",
+    },
   ];
+
+  const schemaFaQs = faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }));
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -243,6 +264,17 @@ export default function Pricing() {
           </ScrollReveal>
         </div>
       </section>
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": schemaFaQs
+          })
+        }}
+      />
     </div>
   );
 }

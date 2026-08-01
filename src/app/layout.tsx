@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Bookkeeping Services in Cypress & Tomball, TX | AARC Smart Bookkeeping",
   description: "Professional monthly bookkeeping, catch-up cleanup, payroll, and QuickBooks setup for small businesses in Cypress, Tomball, and Northwest Houston, TX. Book a free consultation.",
-  metadataBase: new URL("https://aarcsmartbookkeeping.com"),
+  metadataBase: new URL("https://www.aarcbookkeeping.com"),
   alternates: {
     canonical: "/",
   },
@@ -78,7 +78,7 @@ export default function RootLayout({
               "priceRange": "$$",
               "founder": "Raksha Shetty",
               "description": "Professional monthly bookkeeping, catch-up cleanup, payroll, and QuickBooks setup for small businesses in Cypress, Tomball, and Northwest Houston, TX.",
-              "url": "https://aarcsmartbookkeeping.com"
+              "url": "https://www.aarcbookkeeping.com"
             }),
           }}
         />

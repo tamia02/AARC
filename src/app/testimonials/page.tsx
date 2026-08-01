@@ -36,6 +36,20 @@ export default function Testimonials() {
     },
   ];
 
+  const reviews = testimonials.map(test => ({
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "name": test.name
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": test.stars.toString(),
+      "bestRating": "5"
+    },
+    "reviewBody": test.text
+  }));
+
   return (
     <div className="relative overflow-hidden bg-background text-on-background">
       {/* Hero Content Header */}
@@ -125,6 +139,26 @@ export default function Testimonials() {
           </ScrollReveal>
         </div>
       </section>
+      
+      {/* Review & AggregateRating Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "@id": "https://www.aarcbookkeeping.com/#organization",
+            "name": "AARC Smart Bookkeeping",
+            "url": "https://www.aarcbookkeeping.com",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "reviewCount": testimonials.length.toString()
+            },
+            "review": reviews
+          })
+        }}
+      />
     </div>
   );
 }

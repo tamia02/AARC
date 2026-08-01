@@ -18,7 +18,7 @@ export default function Home() {
             <div className="lg:col-span-8">
               <ScrollReveal direction="up" delay={0.1}>
                 <h1 className="font-serif text-[40px] md:text-[60px] text-on-background mb-6 leading-tight font-bold">
-                  Empowering Your Business with <br /><span className="italic text-primary">Smart Bookkeeping</span>.
+                  Empowering Your Business with <br /><span className="italic text-primary">Smart Bookkeeping</span>
                 </h1>
               </ScrollReveal>
               <ScrollReveal direction="up" delay={0.2}>

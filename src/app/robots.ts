@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://aarcsmartbookkeeping.com/sitemap.xml",
+    sitemap: "https://www.aarcbookkeeping.com/sitemap.xml",
   };
 }

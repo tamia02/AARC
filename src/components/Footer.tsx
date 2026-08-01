@@ -98,12 +98,12 @@ export default function Footer() {
         <p className="font-sans text-xs opacity-40">
           Made with ♥ by{" "}
           <a
-            href="https://vaslinq.com"
+            href="https://vaslix.com"
             target="_blank"
             rel="noopener noreferrer"
             className="underline hover:opacity-80 transition-opacity"
           >
-            Tasmiya @ vaslinq.com
+            Tasmiya @ vaslix.com
           </a>
         </p>
       </div>
